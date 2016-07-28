@@ -4,19 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script>
-		function sum(p){
-			return this
-			return function(p1){
-				return p+p1
-				
+		function sum(a) {
 
-			}
-			
-		}
-		document.write(sum(2)(5)+'</br>');
-		document.write(sum(2)(5)(5)+'</br>');
+  var curSum = a;
 
+  function f(b) {
+    curSum += b;
+    return f;
+  }
+
+  f.toString = function() {
+    return curSum;
+  };
+
+  return f;
+}
+		document.write(sum(3)(6)+"</br>");
+		document.write(sum(3)(6)(8)(9)+"</br>");
 	</script>
+
 </head>
 <body>
 	

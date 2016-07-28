@@ -8,19 +8,14 @@
 
   var curSum = a;
 
-  function f(b) {
-    curSum += b;
-    return f;
+ return function (b) {
+    return a+b;
+    
   }
 
-  f.toString = function() {
-    return curSum;
-  };
-
-  return f;
+  
 }
 		document.write(sum(3)(6)+"</br>");
-		document.write(sum(3)(6)(8)+"</br>");
 	</script>
 
 </head>

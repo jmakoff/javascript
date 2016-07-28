@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function bigToSmall (arr){
+			
+			function compareNumeric(a, b) {
+            if (a >= b) return 1;
+            if (a < b) return -1;
+        }; 
+        var arr1=(arr.join().split(',').sort(compareNumeric)).join(">");
+        document.write(arr1)
+		};
+		var exmpl = [[1,3,5],[2,4,6]];
+		bigToSmall(exmpl);
+
+	</script>
+</body>
+</html>
