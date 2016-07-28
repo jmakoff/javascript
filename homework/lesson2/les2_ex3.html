@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function sum(a) {
+
+  var curSum = a;
+
+  function f(b) {
+    curSum += b;
+    return f;
+  }
+
+  f.toString = function() {
+    return curSum;
+  };
+
+  return f;
+}
+		document.write(sum(3)(6)+"</br>");
+		document.write(sum(3)(6)(8)+"</br>");
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>
