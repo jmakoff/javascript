@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function compose(val, func){
+				return func.call(this.val);
+				function toString(){
+					return compose;
+				}
+		};
+		var doubleTheValue = function(val) { return val * 2; }
+		var addOneToTheValue = function(val) { return val + 1; }
+		compose(5, doubleTheValue) //должно вернуться значение 10
+		compose(5, doubleTheValue, addOneToTheValue) // должно вернуться значение  11
+
+
+
+		document.write(compose);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
