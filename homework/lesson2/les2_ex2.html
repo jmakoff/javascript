@@ -7,7 +7,14 @@
 		function strCount(obj) {
 			var colCount=0;
 			for (var key in obj){
-				if (typeof (obj[key]) === "string"){
+				if ( Array.isArray(obj[key])) {
+					for ( i=0; i < key.length; i++) {
+						if (typeof key[i] === "string") {
+							colCount++
+						}
+					}
+				}
+				else if (typeof (obj[key]) === "string"){
 					colCount++
 					}}
 			
