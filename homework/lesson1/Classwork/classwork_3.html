@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<script>	
+var arr = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90];
+function compareNumeric(a, b) {
+            if (a >= b) return 1;
+            if (a < b) return -1;
+        }; 
+
+ function minOfArr(array) {
+ 	 array.sort(compareNumeric);
+ 	 return array[0];
+ };
+ function maxOfArr(array){
+ 	array.sort(compareNumeric);
+ 	return array[array.length-1];
+ };
+ function other(arr1){
+ 	var a = [];
+ 		for(i=0;i<arr1.length;i++){
+ 			if( arr1[i]>0||arr1[i]%2===0){
+ 				a.push(arr1[i]);
+ 		} }
+return a
+ 	};
+document.write("максимальное значение массива: "+maxOfArr(arr)+"</br>");
+document.write("минимальное значение массива: "+minOfArr(arr)+"</br>");
+document.write("массив чётных и положительных чисел: "+ other(arr));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
