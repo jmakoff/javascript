@@ -3,12 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script>
-		var a = 1;
-		function timer() {
-			alert(a++);		}
-			var t = setInterval(timer, 200);
-			clearInterval(t);
+	<script>/*###Задача 1 
+
+Представьте, что в JavaScript нет метода call, есть только метод apply. Используя apply, напишите метод call. */
+		function call() {
+			var arr = [];
+    for (var i = 0; i<arguments.length; i++) {
+    	arr.push(arguments[i]);
+    }
+	
+    this.apply(arr.shift(), arr); 
+}
+		
 	</script>		
 </head>
 <body>
