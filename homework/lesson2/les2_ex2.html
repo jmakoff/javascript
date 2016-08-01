@@ -9,7 +9,7 @@
 			for (var key in obj){
 				if ( Array.isArray(obj[key])) {
 					for ( i=0; i < key.length; i++) {
-						if (typeof key[i] === "string") {
+						if (typeof key[i] === "string") {   //проблема в том что все елементы масссива видит как строку, как можно это исправить?
 							colCount++
 						}
 					}
