@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,25 +9,21 @@
 </head>
 <body>
 	<script>
-		var s = function(){
-			var cur = 0;
-			var s =0;
-			return{
-				sum: function(par){
-					return 
-					cur = par ; 
-					s = cur+par;
-					
-					},
-				show:function(){
-					document.write(s+'</br>');
-				}
-			}}
-		var summa=s();
-		summa.sum(5);
-		summa.show();
-		summa.sum(10);
-		summa.show();
+	/*###Задача 1. 
+Напишите функцию, которая принимает 1 параметр.
+При первом вызове она его запоминает, при втором - суммирует переданный параметр с параметром, переданным при предыдущем вызове. */
+		var cur = 0;
+		var sum =0;
+			var s = function(p){
+			cur=p;
+			sum+=cur;
+			return sum;				
+			}
+			document.write(s(3)+"</br>");
+			document.write(s(5)+"</br>");
+			document.write(s(10)+"</br>");
+
+		
 		
 
 	</script>
