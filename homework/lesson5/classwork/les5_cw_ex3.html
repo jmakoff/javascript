@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		/*
+###Задача 3
+Напишите функцию, которая принимает один аргумент и возвращает его тип данных. 
+Выполните обработку исключений в случае передачи двух и больше аргументов.
+
+		*/
+function type(arg) {
+	if (arguments.length>1){
+		return("ошибка, допустим ввод только одного числа")
+	}{
+
+	return typeof(arg);}
+
+}
+alert(type("fafe"));
+alert(type(9,9,0));
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
