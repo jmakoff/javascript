@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		/*###Задача 1 
+
+Напишите функцию sumArgs, которая суммирует все свои аргументы. При решении задачи используйте метод call или apply. 
+*/
+
+	function sumArgs() {
+            var arr = [].reduce.call(arguments, function (sum, arg) {
+                return sum + arg;
+            });
+            return arr;
+        }
+        alert(sumArgs(3,2,4,52,9))
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
