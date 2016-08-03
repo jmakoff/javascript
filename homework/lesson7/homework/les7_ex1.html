@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		div{
+			position: absolute;
+			border: 4px double black;
+			border-radius: 10px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+		}
+		#first {
+			left:5px;
+			top: 20px;
+
+		}
+		#second {
+			left: 20px;
+			background-color: green;
+
+		}
+		#third {
+			left:40px;
+			background-color: blue;
+		}
+	</style>
+	<script>
+	/*###Задача 1. 
+
+Создайте страницу с 3 элементами div. Напишите сценарий, который будет произвольно менять положение этиъ элементов на странице каждую секунду. 
+
+			*/
+		window.onload = function () {
+			var div_1 = document.getElementById('first');
+			var div_2 = document.getElementById('second');
+			var div_3 = document.getElementById('third');
+			function getRandomInt(min, max){
+
+  				return Math.floor(Math.random() * (max - min + 1)) + min;
+				}
+
+
+			function changePlace(div){
+				div.style.left = getRandomInt(0, document.documentElement.clientWidth) + "px";
+        		div.style.top = getRandomInt(0, document.documentElement.clientHeight) + "px";}
+
+			setInterval(function(){
+				changePlace(div_1);
+				changePlace(div_2);
+				changePlace(div_3);}, 1000)
+
+		}
+	</script>
+<div id="first"></div>
+<div id="second"></div>
+<div id="third"></div>
+
+</body>
+</html>
