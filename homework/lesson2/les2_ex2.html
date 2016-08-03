@@ -7,30 +7,23 @@
 		function strCount(obj) {
 			var colCount=0;
 			for (var key in obj){
-				if ( Array.isArray(obj[key])) {
-					for ( i=0; i < key.length; i++) {
-						if (typeof key[i] === "string") {   //проблема в том что все елементы масссива видит как строку, как можно это исправить?
-							colCount++
-						}
-					}
-				}
-				else if (typeof (obj[key]) === "string"){
-					colCount++
+				if (typeof obj[key] === 'string'){
+							colCount++}
+						 else if (typeof (obj[key] === "object")) {
+					colCount += strCount(obj[key]);
 					}}
+					return colCount}
 			
-			strCount.toString = function(){
-				return colCount;
-			}
 			
-			}
-strCount({
+			
+document.write(strCount({
   first: "1",
   second: "2",
   third: false,
   fourth: ["anytime",2,3,4],
   fifth:  null
-  });
-document.write(strCount);
+  }));
+
 	
 	</script>
 </head>
