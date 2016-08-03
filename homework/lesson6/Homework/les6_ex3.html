@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		/*###Задача 3 
+Метод elem.closest(css) для поиска ближайшего родителя, удовлетворяющего селектору css, не поддерживается некоторыми браузерами, например IE11-.
+Создайте для него полифилл.
+*/
+function closest(css) {
+	var par = this.parentNode;
+	var isCss = par.querySelectorAll(css)
+	do {if(par.querySelector(css)){
+		return par.querySelector
+	}{
+		par = par.parentNode
+	}}while(par);
+	
+	
+
+}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
