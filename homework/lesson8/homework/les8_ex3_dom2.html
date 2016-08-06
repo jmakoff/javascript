@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+	<input type="text" id="firstNum" >
+	<input type="text" id="secondNum" >
+	<button id="plus">+</button>
+	<button id="minus">-</button>
+	<button id = "div">/(divide)</button>
+	<button id ="mul">*(multiple)</button>
+	<div id = "result"></div>
+	<script>
+	window.onload = function () {
+		 
+	
+		var firstNum = document.getElementById("firstNum");
+		var secNum = document.getElementById("secondNum");
+		var plus = document.getElementById("plus");
+		var minus = document.getElementById("minus");
+		var div = document.getElementById("div");
+		var mul = document.getElementById("mul");
+		var res = document.getElementById("result");
+		
+
+		function isValNum(){
+			if (res.innerHTML === "NaN") {
+				
+			alert('Wrong entry, only numbers inside!!!');
+		}}
+		plus.addEventListener('click', function () {
+			
+			res.innerHTML = (+firstNum.value) + (+secNum.value);
+			isValNum();
+			 
+		})
+		minus.addEventListener('click',function () {
+			
+			res.innerHTML = (+firstNum.value) - (+secNum.value);
+			isValNum();
+			 
+		})
+		div.addEventListener('click', function () {
+			
+			res.innerHTML = (+firstNum.value) / (+secNum.value);
+			isValNum();
+			 
+		})
+		mul.addEventListener('click', function () {
+			
+			res.innerHTML = (+firstNum.value) * (+secNum.value);
+			isValNum();
+			 
+		})
+
+	
+	}
+	</script>
+
+
+</body>
+</html>
