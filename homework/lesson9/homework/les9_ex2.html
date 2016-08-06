@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			top:100px;
+			left:200px;
+			height: 100px;
+			width:100px;
+			background-color: darkviolet;
+			text-align: center;
+			line-height: 100px;
+			position: absolute;
+			border-radius: 50px;
+			font-size: 30px;
+			color: lime;
+			border-color: blue;
+			border-width: 5px;
+			font-family: fantasy;
+			
+		}
+	</style>
+</head>
+<body>
+	<script>
+		/*###Задача 2.  
+Создайте круг красного цвета с надписью "Скидка". Когда курсор пользователя будет приближаться к ней, 
+"Скидка" должна от него "убегать", не давая пользователю нажать на красный круг. 
+Если круг будет выйдет за одну из сторон экрана, то он должен, появится с противоположной стороны.
+		*/
+		window.onload = function(){
+			var circle = document.getElementById("sale");
+			var top = parseInt(window.getComputedStyle(circle).getPropertyValue("top"), 10);
+					function randomInteger(min, max) {
+   						var rand = min - 0.5 + Math.random() * (max - min + 1)
+   						 rand = Math.round(rand);
+    						return rand;
+  					}
+			circle.addEventListener("mouseover", function () {
+				circle.style.top = randomInteger(0, document.documentElement.clientHeight)+ "px";
+				circle.style.left = randomInteger(0, document.documentElement.clientWidth)+ "px";
+								
+				 
+			})
+
+
+
+		}
+	</script>
+
+<div id="sale">sale</div>
+</body>
+</html>

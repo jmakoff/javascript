@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+<style>
+	div{ height: 50px;
+		width: 50px;
+		background-color: orange;
+		top:40px;
+		left: 155px;
+		border-radius: 5px;
+		position: absolute;
+
+
+	 }
+</style>
+<script>
+	/*
+###Задача 3.  
+Создайте страницу с двумя полями ввода, кнопкой и элементом div с шириной и высотой 50px. 
+Создайте сценарий, который по нажатию на кнопку будет перемещать div в координаты, указанные в полях ввода. 
+В случае, если при нажатии кнопки хотя бы одно из полей ввода не заполнено, пользователь должен получить предупреждение, 
+а событие click должно быть отменено. 
+
+	*/
+	window.onload = function(){
+		var sqrt = document.getElementById("sq");
+		var coorX = document.getElementsByTagName("input")[0];
+		var coorY = document.getElementsByTagName("input")[1];
+		var btn = document.getElementsByTagName("button")[0];
+		btn.addEventListener('click', function () {
+			var higthCoor = +coorY.value;
+			var widthCoor = +coorX.value;
+			if(higthCoor>parseInt(document.documentElement.clientHeight,10)||widthCoor>parseInt(document.documentElement.clientWidth, 10)){
+				alert("Элемент будет установлен, но за границами окна вашего браузера, соответственно вы его не увидите. Лучше введите более корректные данные.")
+			}
+			if(isNaN(higthCoor) || isNaN(widthCoor)  ){
+				alert("Проверьте корректность заполнения!");
+				}else{
+					sqrt.style.top = higthCoor+"px";
+					sqrt.style.left = widthCoor+"px";
+				}
+			
+			})
+	}
+
+</script>
+<div id="sq"></div>
+<input type="text" >
+<input type="text" >
+<button>Переместить!</button>	
+</body>
+</html>
