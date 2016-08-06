@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	/*###Задача 1. 
+
+Создайте две HTML страницы с разным контентом. Создайте страницу, в которой находиться сценарий загружающий и отображающий контент двух этих страниц при нажатии на кнопку. 
+Контент должен загружаться асинхронно.*/
+window.onload = function(){
+    var btn = document.getElementsByTagName("button")[0];
+    var output1 = document.getElementsByTagName("p")[0];
+    var output2 = document.getElementsByTagName("p")[1];
+
+    btn.addEventListener('click', function () {
+        var xmr = new XMLHttpRequest();
+        var xml = new XMLHttpRequest();
+        
+        xmr.open("GET","files/secPage.html", true)
+        xml.open("GET", "files/firstPage.html", true);
+        xmr.onreadystatechange = function () {
+            if (xmr.readyState == 4) {
+                output2.innerHTML = xmr.responseText;
+            }
+        }
+        xml.onreadystatechange = function () {
+            if (xml.readyState == 4) {
+                output1.innerHTML = xml.responseText;
+            }
+        }
+        xml.send();
+        xmr.send();
+        
+    })
+}
+</script>
+    <style>
+
+    </style>
+    <p></p>
+    <p></p>
+	<button> Запрос на отображение контента</button>
+</body>
+</html>
