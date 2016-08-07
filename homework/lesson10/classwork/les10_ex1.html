@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>/*###Задача 1. 
+
+Создайте страницу с кнопкой.
+Создайте код, который загрузит на страницу картинку img.jpg (файл находитя в папке classwork) асинхронно через секунду после загрузки страницы.  
+*/
+		window.onload = function(){
+			setTimeout(function(){
+				var img = document.createElement('img');
+				img.setAttribute("src", "img.jpg")
+				document.body.appendChild(img);
+			}, 1000);
+		}
+	</script>
+	<button>button</button>
+</body>
+</html>
