@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*###Задача 2. 
+    
+    Модифицируйте код  предыдущего задания так, чтобы максимальное время обработки запроса не превышало 20 секунд и при первышении этого времени запрос был отменен, 
+    а пользователь видел на экране сообщение об ошибке. 
+    */
+window.onload = function(){
+    var btn = document.getElementsByTagName("button")[0];
+    var output1 = document.getElementsByTagName("p")[0];
+    var output2 = document.getElementsByTagName("p")[1];
+
+    btn.addEventListener('click', function () {
+        var xmr = new XMLHttpRequest();
+        var xml = new XMLHttpRequest();
+
+        xmr.open("GET","files/secPage.html", true)
+        xml.open("GET", "files/firstPage.html", true);
+        xmr.onreadystatechange = function () {
+            if (xmr.readyState == 4) {
+                output2.innerHTML = xmr.responseText;
+            }
+        }
+        xml.onreadystatechange = function () {
+            if (xml.readyState == 4) {
+                output1.innerHTML = xml.responseText;
+            }
+        }
+        xml.send();
+        xmr.send();
+        xmr.timeout = 20000;
+        xml.timeout = 20000;
+        xmr.ontimeout = function () {
+            alert("Запрос №2 превысил время ожидания!!!");
+        }
+        xml.ontimeout = function () {
+            alert("Запрос №1 превысил время ожидания!!!")
+        }
+    })
+}
+    </script>
+    <style>
+    </style>
+    <p></p>
+    <p></p>
+    <button> Request button </button>
+</body>
+</html>

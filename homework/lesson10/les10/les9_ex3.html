@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*###Задача 3. 
+
+Разработайте страницу с двумя полями ввода и кнопкой. Пользователь должен вводить в поля ввода целочисленный значения, а нажатие по кнопке должно приводить к 
+асинхронному запросу на сервер. Запрашивать следует обработчик CalcHandler.ashx, который находиться вместе с задачей в папке Homework, обработчик принимает два post параметра с именами ‘a’ и ‘b'. 
+Результат который возвращает обработчик выведите на страницу (рекомендуется выполнять задачу в Visual Studio).
+
+        */
+        window.onload = function () {
+
+
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var btn = document.getElementById("btn");
+            var output = document.getElementById('summ')
+            btn.onclick = function () {
+                var body = 'a=' + encodeURIComponent(a) + '&b=' + encodeURIComponent(b);
+                
+                var req = new XMLHttpRequest();
+                
+                req.open("POST", "files/CalcHandler.ashx", true)
+                if (req.readyState == 4) {
+                    output.innerHTML = req.responseText;
+                } else {
+                    alert("Invalid request!!!")
+                }
+                req.send('a=' + a + '&b=' + b);
+            }
+        }
+    </script>
+  <input type="text" id="a" />
+    <input type="text" id="b" />
+    <input type="button" id="btn" value="make summ" />
+    <p id="summ">here will be summ</p>
+</body>
+</html>
