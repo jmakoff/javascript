@@ -4,15 +4,24 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script>
-		/*Задача 1.
+		/*Создайте страницу. Разместите на ней произвольное количеством элементов. 
+Разработайте сценарий, который будет по очереди перемещать span с текстом и интервалом в 400мс:
+1) Перед элементом.
+2) Внутри элемента перед тектом
+3) Внетри элемента после текста.
+4) После элемента.
 
-Создайте страницу. Разместите на ней произвольное количеством элементов. Разработайте сценарий, который будет по очереди перемещать с текстом и интервалом в 100мс: 1) Перед элементом. 2) Внутри элемента перед тектом 3) Внетри элемента после текста. 4) После элемента.
 
 		*/
 		window.onload= function(){
-
-			var li = getElementByTagName("li");
-			scrollIntoView
+			var ul = document.querySelector('ul')
+			var where = ["beforeBegin","afterBegin","beforeEnd", "afterEnd"];
+			var li = document.getElementsByTagName("li")[1];
+			var i = 0
+			setInterval(function(){
+				li.insertAdjacentHTML( where[i], "<span>Inserted text</span>");
+				i+=1
+			}, 400)
 
 
 		}
