@@ -1,0 +1,955 @@
+@media (min-width:1200px){
+	body{
+	width: 1200px;
+	height: 5300px;
+	
+	margin: 0px;
+	overflow: scroll;
+}
+
+.menu{
+	position:fixed;
+	width:1200px;
+	height:10% ;;
+	background-image: url("image/menu.png");
+	background-size: 100% 110%;
+	opacity: 0.8;
+	z-index: 100;
+}
+.slider{
+	height:720px;
+	width: 100%;
+	
+	background-size: cover;
+}
+.slidebtns{
+	height: 100px;
+	width: 100%;
+	top:250px;
+	position: relative;
+	background-color: #989692;
+	opacity: 0.5;
+
+}
+.buy{
+	position: relative;
+	background-image: url("image/buy.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top:25px;
+	width:17.5%;
+	height: 34.5px;
+	display: inline-block;
+	left:33%;
+	
+
+}
+.btn1{
+	position:relative;
+	height: 50px;
+	width: 50px;
+	background-image: url("image/next.png"); 
+	background-size: cover;
+	top: 25px;
+	left: 70%;
+	display: inline-block;
+	cursor: pointer;
+}
+.btn2{
+	position:relative;
+	height: 50px;
+	width: 50px;
+	background-image: url("image/back.png"); 
+	background-size: cover;
+	top: 25px;
+	left: 20%;
+	display: inline-block;
+	cursor: pointer;
+}
+.srv_icon{
+	position:absolute;
+	height: 75px;
+	width: 75px;
+	top:925px;
+	
+	display: inline-block;
+
+}
+
+#webDesign{
+	
+	left:305px;
+	
+	background-image: url("image/srv1.png");
+	background-size: cover;
+}
+
+#grDesign{
+	
+	background-image: url("image/srv2.png");
+	background-size: cover;
+	left:510px;
+}
+#photogr{
+	
+	background-image: url("image/srv3.png");
+	background-size: cover;
+	left: 715px;
+}
+#develop{
+	
+	background-image: url("image/srv4.png");
+	background-size: cover;
+	left: 915px;
+}
+.photos{
+	position: relative;
+	height:163px;
+	width: 196px;
+	top:75px;
+	display: inline-block;
+	float:center;
+	background-size: cover;
+}
+.overlay1{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/HOVER.png');
+
+}
+.overlay2{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/Hover2.png');
+
+}
+.overlay3{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/HOVER3.png');
+
+}
+.overlay4{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/HOVER4.png');
+
+}
+#i1{
+	
+	
+	background-image: url("images/image1.jpg");
+}
+#i2{
+	
+	background-image: url("images/image2.jpg");
+}
+#i3{
+	
+	background-image: url("images/image3.jpg");
+}
+#i4{
+	
+	background-image: url("images/image4.jpg");
+}
+#i5{
+	
+	background-image: url("images/image5.jpg");
+}
+#i6{
+	
+	background-image: url("images/image6.jpg");
+}
+#i7{
+	
+	background-image: url("images/image7.jpg");
+}
+#i8{
+	
+	background-image: url("images/image8.jpg");
+}
+#i9{
+	
+	background-image: url("images/image9.jpg");
+}
+#i10{
+	
+	background-image: url("images/image10.jpg");
+}
+#i11{
+	
+	background-image: url("images/image11.jpg");
+}
+#i12{
+	
+	background-image: url("images/image12.jpg");
+}
+.navigation{
+	position: absolute;
+	top:1650px;
+	left:350px;
+	font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}
+#webD{
+	left:400px;
+}
+#grD{
+	left: 500px;
+}
+#photo{
+	left: 650px;
+}
+#illustr{
+	left: 750px;
+}
+.menu_btn{
+	position: relative;
+	height: 100%;
+	left: 53%;
+	display: inline-block;
+	cursor: pointer;
+}
+#home{
+	width: 3.5%;
+}
+#srv{
+	width: 5%;
+}
+#work{
+	width: 4%;
+}
+#about{
+	width: 4.5%;
+}
+#clients{
+	width: 5%;
+}
+#contact{
+	width: 4%;
+}
+.services{
+	height: 400px;
+	background-image: url("image/services.png");
+	background-size: cover;
+}
+.services_2{
+	height: 300px;
+	background-image: url("image/services_2.png");
+	background-size: cover;
+}
+.works{
+	height:200px;
+	background-image: url("image/work.png");
+	background-size: contain;
+
+}
+.wrk_img{
+	height: 400px;
+	background-color: white;
+	
+}
+.like{
+	height: 300px;
+	background-image:url("image/like.png");
+	background-size:contain;
+}
+.btn_like{
+	position: relative;
+	top: 70%;
+	left: 48%;
+	height: 12%;
+	width: 9%;
+	cursor: pointer;
+
+}
+.numbers{
+	height: 250px;
+	background-image: url("image/numbers.png");
+	background-size: contain;
+}
+.numbins{
+	display: inline-block;
+	position: relative;
+	background-color: #131a1d;
+	color: white;
+	font-family: 'Oswald';
+	font-weight: bold;
+	font-size: 150%;
+	text-align: center;
+	height: 30px;
+	width:100px;
+	top: 140px;
+}
+#happy{
+	
+	left: 265px;
+}
+#compl{
+	left:350px;
+}
+#aw{
+	left:433px;
+}
+#coffee{
+	left:515px;
+}
+.about{
+	height: 500px;
+	background-image: url("image/about.png");
+	background-size: contain;
+}
+.aboutIcons{
+	position: absolute;
+	height: 50px;
+	width:50px;
+	border-radius: 50%;
+background-size: cover;
+}
+.bigIcons{
+	width:70px;
+	height:70px;
+}
+.bigIcons2{
+	width:95px;
+	height:95px;
+}
+#first{
+	left: 230px;
+	top:2815px;
+	background-image: url('images/aboutIcon1.png');
+}
+#sec{
+	left:230px;
+	top:2915px;
+	background-image: url('images/aboutIcon3.png');
+}
+#third{
+	top:2815px;
+	left:605px;
+	background-image: url('images/aboutIcon2.png');
+}
+#fourth{
+	left:605px;
+	top:2915px;
+	background-image: url('images/aboutIcon4.png');
+}
+.team{
+	height: 800px;
+	background-image: url("image/team.png");
+	background-size: contain;
+}
+.teamIcons{
+	display: inline-block;
+	height: 150px;
+	width: 161px;
+	position:relative;
+	top:110px;
+	left:217px;
+	margin: 6px;
+	background-size: cover ;
+
+
+}
+#firstMan{
+	background-image: url("images/man2.jpg");
+}
+#secMan{
+	background-image: url("images/man4.jpg");
+}
+#thirdMan{
+	left: 220px;
+	background-image: url("images/man3.jpg");
+}
+#fourthMan{
+	left: 223px;
+	background-image: url("images/man1.jpg");
+
+}
+.text{
+	left: 340px;
+	height: 60px;
+	width: 480px;
+	top:250px;
+	position: relative;
+	background-color:#131316;
+	opacity:0.1;
+	color:white;
+	font-family: "Oswald " ;
+	font-weight: light;
+	font-size: 10px
+
+}
+canvas{
+	display: inline-block;
+	position: relative;
+	background-color: #131a1d;
+	width: 120px;
+	top:403px;
+	left: 240px;
+	
+}
+
+.clients{
+	height: 350px;
+	background-image: url("image/clients.png");
+	background-size: contain;
+}
+.otz{
+	height: 200px;
+	background-image: url("image/otz.png");
+	background-size: contain;
+}
+.dots{
+	position: relative;
+	display: inline-block;
+	height: 3px;
+	width: 4px;
+	cursor: pointer;
+	top:130px;
+	left: 48.5%;
+
+}
+.quote{
+	position: relative;
+	top:20px;
+	height: 60px;
+	width:400px;
+	left:33%;
+	background-color:#131a1d;
+	opacity: 0;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: lighter;
+						
+
+	
+	font-size: 12px;
+	text-align: center;
+}
+.who{
+	text-align: center;
+	position: relative;
+	top:30px;
+	height: 20px;
+	width:100px;
+	left: 46%;
+	background-color:#131a1d;
+	opacity: 0;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+
+}
+.contacts{
+	height: 350px;
+	background-image: url("image/contacts.png");
+	background-size: contain;
+}
+.massage{
+	height: 400px;
+	background-image: url("image/massage.png");
+	background-size: contain;
+}
+.footer{
+	height: 125px;
+	background-image: url("image/footer.png");
+	background-size: contain;
+}
+.up{
+	position: relative;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	top:73px;
+	left:48.1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media (min-width:992px) and (max-width: 1200px){
+	body{
+	width: 992px;
+	height: 5300px;
+	
+	margin: 0px;
+	overflow: scroll;
+}
+
+.menu{
+	position:fixed;
+	width:992px;
+	height:10% ;;
+	background-image: url("image/menu.png");
+	background-size: 100% 110%;
+	opacity: 0.8;
+	z-index: 100;
+}
+.slider{
+	height:720px;
+	width: 100%;
+	
+	background-size: cover;
+}
+.slidebtns{
+	height: 100px;
+	width: 100%;
+	top:250px;
+	position: relative;
+	background-color: #989692;
+	opacity: 0.5;
+
+}
+.buy{
+	position: relative;
+	background-image: url("image/buy.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top:25px;
+	width:17.5%;
+	height: 34.5px;
+	display: inline-block;
+	left:33%;
+	
+
+}
+.btn1{
+	position:relative;
+	height: 50px;
+	width: 50px;
+	background-image: url("image/next.png"); 
+	background-size: cover;
+	top: 25px;
+	left: 70%;
+	display: inline-block;
+	cursor: pointer;
+}
+.btn2{
+	position:relative;
+	height: 50px;
+	width: 50px;
+	background-image: url("image/back.png"); 
+	background-size: cover;
+	top: 25px;
+	left: 20%;
+	display: inline-block;
+	cursor: pointer;
+}
+.srv_icon{
+	position:absolute;
+	height: 70px;
+	width: 70px;
+	top:860px;
+	
+	display: inline-block;
+
+}
+
+#webDesign{
+	
+	left:21%;
+	
+	background-image: url("image/srv1.png");
+	background-size: cover;
+}
+
+#grDesign{
+	
+	background-image: url("image/srv2.png");
+	background-size: cover;
+	left:35%;
+}
+#photogr{
+	
+	background-image: url("image/srv3.png");
+	background-size: cover;
+	left:49%;
+}
+#develop{
+	
+	background-image: url("image/srv4.png");
+	background-size: cover;
+	left: 63.5%;
+}
+.photos{
+	position: relative;
+	height:163px;
+	width: 196px;
+	top:75px;
+	display: inline-block;
+	float:center;
+	background-size: cover;
+}
+.overlay1{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/HOVER.png');
+
+}
+.overlay2{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/Hover2.png');
+
+}
+.overlay3{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/HOVER3.png');
+
+}
+.overlay4{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url('images/HOVER4.png');
+
+}
+#i1{
+	
+	
+	background-image: url("images/image1.jpg");
+}
+#i2{
+	
+	background-image: url("images/image2.jpg");
+}
+#i3{
+	
+	background-image: url("images/image3.jpg");
+}
+#i4{
+	
+	background-image: url("images/image4.jpg");
+}
+#i5{
+	
+	background-image: url("images/image5.jpg");
+}
+#i6{
+	
+	background-image: url("images/image6.jpg");
+}
+#i7{
+	
+	background-image: url("images/image7.jpg");
+}
+#i8{
+	
+	background-image: url("images/image8.jpg");
+}
+#i9{
+	
+	background-image: url("images/image9.jpg");
+}
+#i10{
+	
+	background-image: url("images/image10.jpg");
+}
+#i11{
+	
+	background-image: url("images/image11.jpg");
+}
+#i12{
+	
+	background-image: url("images/image12.jpg");
+}
+.navigation{
+	position: absolute;
+	top:1650px;
+	left:350px;
+	font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}
+#webD{
+	left:400px;
+}
+#grD{
+	left: 500px;
+}
+#photo{
+	left: 650px;
+}
+#illustr{
+	left: 750px;
+}
+.menu_btn{
+	position: relative;
+	height: 100%;
+	left: 53%;
+	display: inline-block;
+	cursor: pointer;
+}
+#home{
+	width: 3.5%;
+}
+#srv{
+	width: 5%;
+}
+#work{
+	width: 4%;
+}
+#about{
+	width: 4.5%;
+}
+#clients{
+	width: 5%;
+}
+#contact{
+	width: 4%;
+}
+.services{
+	height: 300px;
+	background-image: url("image/services.png");
+	background-size: contain;
+}
+.services_2{
+	height: 250px;
+	background-image: url("image/services_2.png");
+	background-size: contain;
+}
+.works{
+	height:200px;
+	background-image: url("image/work.png");
+	background-size: contain;
+
+}
+.wrk_img{
+	height: 400px;
+	background-color: white;
+	
+}
+.like{
+	height: 300px;
+	background-image:url("image/like.png");
+	background-size:contain;
+}
+.btn_like{
+	position: relative;
+	top: 70%;
+	left: 48%;
+	height: 12%;
+	width: 9%;
+	cursor: pointer;
+
+}
+.numbers{
+	height: 250px;
+	background-image: url("image/numbers.png");
+	background-size: contain;
+}
+.numbins{
+	display: inline-block;
+	position: relative;
+	background-color: #131a1d;
+	color: white;
+	font-family: 'Oswald';
+	font-weight: bold;
+	font-size: 150%;
+	text-align: center;
+	height: 30px;
+	width:100px;
+	top: 140px;
+}
+#happy{
+	
+	left: 265px;
+}
+#compl{
+	left:350px;
+}
+#aw{
+	left:433px;
+}
+#coffee{
+	left:515px;
+}
+.about{
+	height: 500px;
+	background-image: url("image/about.png");
+	background-size: contain;
+}
+.aboutIcons{
+	position: absolute;
+	height: 50px;
+	width:50px;
+	border-radius: 50%;
+background-size: cover;
+}
+.bigIcons{
+	width:70px;
+	height:70px;
+}
+#first{
+	left: 230px;
+	top:2815px;
+	background-image: url('images/aboutIcon1.png');
+}
+#sec{
+	left:230px;
+	top:2915px;
+	background-image: url('images/aboutIcon3.png');
+}
+#third{
+	top:2815px;
+	left:605px;
+	background-image: url('images/aboutIcon2.png');
+}
+#fourth{
+	left:605px;
+	top:2915px;
+	background-image: url('images/aboutIcon4.png');
+}
+.team{
+	height: 800px;
+	background-image: url("image/team.png");
+	background-size: contain;
+}
+.teamIcons{
+	display: inline-block;
+	height: 150px;
+	width: 161px;
+	position:relative;
+	top:110px;
+	left:217px;
+	margin: 6px;
+	background-size: cover ;
+
+
+}
+#firstMan{
+	background-image: url("images/man2.jpg");
+}
+#secMan{
+	background-image: url("images/man4.jpg");
+}
+#thirdMan{
+	left: 220px;
+	background-image: url("images/man3.jpg");
+}
+#fourthMan{
+	left: 223px;
+	background-image: url("images/man1.jpg");
+
+}
+.text{
+	left: 340px;
+	height: 60px;
+	width: 480px;
+	top:250px;
+	position: relative;
+	background-color:#131316;
+	opacity:0.1;
+	color:white;
+	font-family: "Oswald " ;
+	font-weight: light;
+	font-size: 10px
+
+}
+canvas{
+	display: inline-block;
+	position: relative;
+	background-color: #131a1d;
+	width: 120px;
+	top:403px;
+	left: 240px;
+	
+}
+
+.clients{
+	height: 350px;
+	background-image: url("image/clients.png");
+	background-size: contain;
+}
+.otz{
+	height: 200px;
+	background-image: url("image/otz.png");
+	background-size: contain;
+}
+.dots{
+	position: relative;
+	display: inline-block;
+	height: 3px;
+	width: 4px;
+	cursor: pointer;
+	top:130px;
+	left: 48.5%;
+
+}
+.quote{
+	position: relative;
+	top:20px;
+	height: 60px;
+	width:400px;
+	left:33%;
+	background-color:#131a1d;
+	opacity: 0;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: lighter;
+						
+
+	
+	font-size: 12px;
+	text-align: center;
+}
+.who{
+	text-align: center;
+	position: relative;
+	top:30px;
+	height: 20px;
+	width:100px;
+	left: 46%;
+	background-color:#131a1d;
+	opacity: 0;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+
+}
+.contacts{
+	height: 350px;
+	background-image: url("image/contacts.png");
+	background-size: contain;
+}
+.massage{
+	height: 400px;
+	background-image: url("image/massage.png");
+	background-size: contain;
+}
+.footer{
+	height: 125px;
+	background-image: url("image/footer.png");
+	background-size: contain;
+}
+.up{
+	position: relative;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	top:73px;
+	left:48.1%;
+}
+
+}

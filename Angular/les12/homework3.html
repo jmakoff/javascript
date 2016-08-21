@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <script>
+        var app = angular.module("app", [])
+        app.controller("ctrl", function ($scope) {
+            $scope.res = 0;
+            $scope.btnclcks = 0;
+            $scope.quest = {
+                val: "выберите вопрос"
+
+            }
+            $scope.ans = {
+
+
+            }
+            $scope.subm = function () {
+                if ($scope.ans.first == "true") {
+                    $scope.res += 1;
+
+                }
+                if ($scope.ans.sec == "true") {
+                    $scope.res += 1;
+
+                }
+                if($scope.ans.third == 2){
+                    $scope.res+=1;
+                }
+                if($scope.ans.fourth == 3){
+                    $scope.res+=1;
+                }
+                if ($scope.ans.five == 2){
+                    $scope.res+=1;
+                }
+                if ($scope.ans.six== 2){
+                    $scope.res+=1;
+                }
+                if($scope.btnclcks>1){
+                    alert("Вы уже нажимали кноку, больше не надо)");
+                    return false;
+                }
+
+                alert("Ваш результат " + $scope.res + "/6")
+            }
+
+
+        })
+    </script>
+</head>
+<body ng-controller="ctrl">
+<h1>Тест</h1>
+<h2>Выберите вопрос</h2>
+<input type="radio" name="number" ng-model="quest.val" value="В каком году крестили Русь?">
+<input type="radio" name="number" ng-model="quest.val" value="Начало второй мировой войны">
+<input type="radio" name="number" ng-model="quest.val" value="Может ли мужчина жениться на сестре своей вдовы?">
+<input type="radio" name="number" ng-model="quest.val" value="На руках - 10 пальцев. Сколько пальцев на 10 руках?">
+<input type="radio" name="number" ng-model="quest.val" value="При какой температуре кипит вода высоко в горах?">
+<input type="radio" name="number" ng-model="quest.val" value=" Каким из этих слов называют группу островов?">
+<h1>{{quest.val}}</h1>
+<div ng-switch on="quest.val">
+    <div ng-switch-when="В каком году крестили Русь?">
+        991год
+        <input type="radio" name="answ" ng-model="ans.first" value="1">
+        <br>
+        999год
+        <input type="radio" name="answ" ng-model="ans.first" value="2">
+        <br>
+        1500год
+        <input type="radio" name="answ" ng-model="ans.first" value="3">
+        <br>
+        988год
+        <input type="radio" name="answ" ng-model="ans.first" value="true">
+        <br>
+
+    </div>
+    <div ng-switch-when="Начало второй мировой войны">
+        <h3>1943год</h3>
+        <input type="radio" name="answ2" ng-model="ans.sec" value="1">
+        <h3>1345год</h3>
+        <input type="radio" name="answ2" ng-model="ans.sec" value="2">
+        <h3>1941год</h3>
+        <input type="radio" name="answ2" ng-model="ans.sec" value="3">
+        <h3>1939год</h3>
+        <input type="radio" name="answ2" ng-model="ans.sec" value="true">
+        <br>
+    </div>
+    <div ng-switch-when="Может ли мужчина жениться на сестре своей вдовы?">
+        Да
+        <input type="radio" ng-model="ans.third" value="1">
+        <br>
+        Нет
+        <input type="radio" ng-model="ans.third" value="2">
+        <br>
+    </div>
+    <div ng-switch-when="На руках - 10 пальцев. Сколько пальцев на 10 руках?">
+        10
+        <input type="radio" ng-model="ans.fourth" value="1"><br>
+        100
+        <input type="radio" ng-model="ans.fourth" value="2"><br>
+        50
+        <input type="radio" ng-model="ans.fourth" value="3"><br>
+        120
+        <input type="radio" ng-model="ans.fourth" value="4"><br>
+    </div>
+    <div ng-switch-when="При какой температуре кипит вода высоко в горах?">
+        Более 100 градусов
+        <input type="radio" ng-model="ans.five" value="1"><br>
+        Менее 100 градусов
+        <input type="radio" ng-model="ans.five" value="2"><br>
+        Вообще не кипит
+        <input type="radio" ng-model="ans.five" value="3"><br>
+        Ровно при 100 градусах
+        <input type="radio" ng-model="ans.five" value="4"><br>
+    </div>
+    <div ng-switch-when="Каким из этих слов называют группу островов?">
+        Фьорд
+        <input type="radio" ng-model="ans.six" value="1"><br>
+        Архипелаг
+        <input type="radio" ng-model="ans.six" value="2"><br>
+        Глетчер
+        <input type="radio" ng-model="ans.six" value="3"><br>
+        Каньон
+        <input type="radio" ng-model="ans.six" value="4"><br>
+    </div>
+<br><br><br><br><button ng-click="subm()">Нажмите по окончанию теста</button>
+</div>
+
+
+</body>
+</html>

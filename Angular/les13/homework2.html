@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <script>
+        angular.module("app", [])
+                .controller("ctrl", function ($scope) {
+                    $scope.divs = [{name: "one"}, {name: "two"}, {name:"Three"}, {name: "four"}, {name:"five"}, {name: "six"}, {name: "seven"}, {name:"eighth"}, {name: "ten"}];
+
+                    $scope.find = function(){
+                        $scope.textF = $scope.text
+                        $scope.filter = function(item) {
+                            if ($scope.textF==item.name){
+                                return item;
+                            }
+                        }
+                    }
+                })
+    </script>
+</head>
+<body ng-controller="ctrl" >
+ <div ng-repeat="item in divs | filter: filter">
+     <div>{{item.name}}</div>
+ </div>
+<input type="text" ng-model="text">
+  <button ng-click="find()">FIND!!!</button>
+
+
+
+</body>
+</html>

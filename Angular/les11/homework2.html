@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <title>ToDo List (Task2)</title>
+    <script src="Libraries/angular.js"></script>
+    <link href="Libraries/bootstrap.css" rel="stylesheet" />
+    <link href="Libraries/bootstrap-theme.css" rel="stylesheet" />
+  
+    <script>
+    var table = [ ];
+
+
+    
+    var model = angular.module("app", []);
+    
+        model.controller('Ctrl',function ($scope) {
+            $scope.t = table;
+            $scope.btn = "add"
+            $scope.btn_click = function () {
+                 $scope.completed = function () {
+                      return $scope.compl ? "yes":"no";
+                 }
+
+                 $scope.t.push({
+                    
+                    name: $scope.name,
+                    descr: $scope.description,
+                    date: $scope.date,
+                    compl: $scope.completed(),
+                    
+                 });
+                 
+                 $scope.name="";
+                 $scope.description="";
+                 $scope.date = "";                               
+                } 
+            $scope.correctData = function () {
+                $scope.ln = "correct name";
+                $scope.btn ="save";
+                $scope.btn ="save"
+
+
+
+
+            }
+        })
+
+    </script>
+
+</head>
+<body ng-controller="Ctrl">
+
+    <div class="container">
+
+        <h3>ToDo List</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Completed</th>
+                    
+                </tr>
+            </thead>
+            <tr ng-repeat="event in t">
+                
+                <td >{{event.name}}</td>
+                <td >{{event.descr}}</td>
+                <td >{{event.date}}</td>
+                <td >{{event.compl}}</td>
+                
+            </tr>
+        </table>
+
+        <div>
+            <h3 >Name</h3>
+           <input ng-model ='name'> 
+           <h3 >Description</h3>
+           <input ng-model ='description'>
+
+           <h3 >Date</h3>
+           <input ng-model ="date">
+           <button ng-model = "btn" ng-click="btn_click()" ng-bind="btn">add</button>
+           <h3>Completed</h3>
+            <input type="checkbox" ng-model = "compl">
+            <!-- Форма для добавления новых задач -->
+        </div>
+
+    </div>
+</body>
+</html>

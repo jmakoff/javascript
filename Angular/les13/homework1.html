@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <style>
+.p{
+    color: #3235ff;
+    text-shadow: #ff1c1f;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+
+}
+    </style>
+    <script>
+        angular.module("app",[])
+        .controller('ctrl', function ($scope) {
+            function style1 () {
+                $scope.Change = {
+
+                }
+            }
+        })
+    </script>
+
+</head>
+<body ng-controller="ctrl">
+
+<p class="p" ng-class="Change">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores aut consectetur cumque, dolor doloremque, doloribus eaque est eveniet inventore neque nulla omnis perferendis quibusdam sed. Aut mollitia neque quo.</p>
+<button ng-click="style1()" >Установить стиль 1</button>
+<button>Установить стиль 2</button>
+<button>Установить стиль 3</button>
+</body>
+</html>

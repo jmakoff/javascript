@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = "../Libraries/angular.js"></script>
+	<script>
+	var module = angular.module("app", []);
+
+	module.controller('ctrl',  function($scope){
+		$scope.plus = function () {
+			 $scope.label = (+$scope.first)+(+$scope.second);
+		}
+		$scope.mul = function () {
+			$scope.label = (+$scope.first)*(+$scope.second);
+		}
+		$scope.minus = function () {
+			$scope.label = (+$scope.first)-(+$scope.second);
+		}
+		$scope.div = function () {
+			$scope.label = (+$scope.first)/(+$scope.second);
+		}
+	})
+
+		
+	</script>
+</head>
+<body ng-controller="ctrl">
+	<input type="text" ng-model = "first">
+	<input type="text" ng-model = "second">
+	<button ng-click="plus()">+</button>
+	<button ng-click="minus()">-</button>
+	<button ng-click="mul()">*</button>
+	<button ng-click="div()">/</button>
+	<h1 ng-bind="label"></h1>
+</body>
+</html>

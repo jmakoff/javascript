@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="button">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = "Libraries/angular.js"></script>
+	<script>
+		var button = angular.module("button",[]);
+		button.controller('btnCtrl', function($scope){
+			
+			
+			
+		});
+
+	</script>
+</head>
+<body ng-controller="btnCtrl">
+	<input type="text" ng-model="input">
+	<h1>{{input}}</h1>
+</body>
+</html>

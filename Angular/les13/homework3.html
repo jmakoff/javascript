@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src = "../Libraries/angular.js"></script>
+    <style>
+        input{
+            display: block;
+        }
+        input.ng-valid.ng-dirty{
+            background-color: lawngreen;
+        }
+        input.ng-invalid.ng-dirty{
+            background-color: #ac2925;
+        }
+    </style>
+    <script>
+        angular.module("app", [])
+                .controller('ctrl', function ($scope) {
+
+
+                })
+    </script>
+</head>
+<body>
+<form>
+<label>ФИО</label>
+<input type="text" ng-model="newUser.name" required>
+<label>Email</label>
+<input type="email" ng-model = "newUser.email" required>
+<label>Phone number</label>
+<input type="number" ng-model="newUser.phone" required>
+<label>Password</label>
+<input type="text"  ng-model="newUser.password" required>
+<label>Retype Password</label>
+<input type="text" ng-model="newUser.rePassword" required ng-pattern="newUser.password">
+</form>
+</body>
+</html>
