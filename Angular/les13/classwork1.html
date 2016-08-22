@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <style>
+        .cl1{
+           font-size: 20px;
+
+        }
+        .cl2{
+            height: 300px;
+            width: 200px;
+            background-color: lightblue;
+            font-style: italic;
+        }
+    </style>
+    <script>
+var app = angular.module("app",[]);
+        app.controller("ctrl", ['$scope', function ($scope) {
+            $scope.changeStyle = function () {
+
+                $scope.className = ["cl1",'cl2'];
+
+            }
+        }]);
+
+    </script>
+</head>
+<body ng-controller="ctrl">
+<div ng-class = "className" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, beatae corporis deserunt dignissimos doloremque dolores et, fugiat, illo incidunt iste iure labore minima nam nulla perspiciatis quam ratione. Ipsam, odio.</div>
+<button ng-click="changeStyle()">add style</button>
+</body>
+</html>
