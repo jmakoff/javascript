@@ -8,21 +8,40 @@
     <title>Document</title>
     <script src="../Libraries/angular.js"></script>
     <style>
-.p{
+p{
     color: #3235ff;
     text-shadow: #ff1c1f;
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
 
 }
+.class1 {
+    background-color: #ac2925;
+    color: #2a6496;
+}
+        .class2{
+            background-color: #4cae4c;
+            color: #66512c;
+            font-style: italic;
+        }
+        .class3{
+            background-color: #cccccc;
+            font-style: oblique;
+            font-weight: bold;
+        }
     </style>
     <script>
         angular.module("app",[])
         .controller('ctrl', function ($scope) {
-            function style1 () {
-                $scope.Change = {
+            $scope.style1 = function () {
+                $scope.Change = "class1";
+            }
+            $scope.style2 = function () {
+                $scope.Change = "class2";
 
-                }
+            }
+            $scope.style3 = function () {
+                $scope.Change= "class3";
             }
         })
     </script>
@@ -30,9 +49,9 @@
 </head>
 <body ng-controller="ctrl">
 
-<p class="p" ng-class="Change">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores aut consectetur cumque, dolor doloremque, doloribus eaque est eveniet inventore neque nulla omnis perferendis quibusdam sed. Aut mollitia neque quo.</p>
+<p ng-class="Change">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores aut consectetur cumque, dolor doloremque, doloribus eaque est eveniet inventore neque nulla omnis perferendis quibusdam sed. Aut mollitia neque quo.</p>
 <button ng-click="style1()" >Установить стиль 1</button>
-<button>Установить стиль 2</button>
-<button>Установить стиль 3</button>
+<button ng-click="style2()">Установить стиль 2</button>
+<button ng-click="style3()">Установить стиль 3</button>
 </body>
 </html>

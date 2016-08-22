@@ -17,32 +17,47 @@
             $scope.t = table;
             $scope.btn = "add"
             $scope.btn_click = function () {
-                 $scope.completed = function () {
-                      return $scope.compl ? "yes":"no";
-                 }
+
 
                  $scope.t.push({
                     
                     name: $scope.name,
                     descr: $scope.description,
                     date: $scope.date,
-                    compl: $scope.completed(),
+                    compl: $scope.compl,
                     
                  });
                  
                  $scope.name="";
                  $scope.description="";
-                 $scope.date = "";                               
+                 $scope.date = "";
+                $scope.compl = false;
+                 var tableIndex = $scope.t.length
                 } 
             $scope.correctData = function () {
                 $scope.ln = "correct name";
                 $scope.btn ="save";
                 $scope.btn ="save"
+            }
+            $scope.modify = function (event) {
+                tableIndex = $scope.t.indexOf(event)
 
-
-
+                $scope.name = event.name;
+                $scope.description = event.descr;
+                $scope.date = event.date;
+                $scope.compl = event.compl;
 
             }
+            $scope.save = function () {
+                $scope.t[tableIndex]={
+                            name: $scope.name,
+                            descr: $scope.description,
+                            date: $scope.date,
+                            compl: $scope.compl
+
+                }
+            }
+
         })
 
     </script>
@@ -71,6 +86,7 @@
                 <td >{{event.descr}}</td>
                 <td >{{event.date}}</td>
                 <td >{{event.compl}}</td>
+               <td> <button ng-click="modify(event)">get this data</button> <button ng-click="save(event)"  >Correct it</td>
                 
             </tr>
         </table>

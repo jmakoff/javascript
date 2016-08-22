@@ -39,12 +39,12 @@
     </tr>
     </thead>
     <tr ng-repeat="item in items">
-        <td ng-switch on="checkbox.name"><div ng-switch-when="true">{{item.name}}</div></td>
-        <td ng-switch on="checkbox.price"><div ng-switch-when="true">{{item.price}}</div> </td>
-        <td ng-switch on="checkbox.cat"><div ng-switch-when="true">{{item.category}}</div> </td>
-        <td ng-switch on="checkbox.count"><div ng-switch-when="true">{{item.count}}</div> </td>
-        <td ng-switch on="checkbox.tax"><div ng-switch-when="true">{{item.tax}}</div> </td>
-        <td ng-switch on="checkbox.expir"><div ng-switch-when="true">{{item.expiration}}</div> </td>
+        <td ng-include src = 'checkbox.name ? "files/name.txt":""'></td>
+        <td ng-include src = 'checkbox.price ? "files/price.txt":""'></td>
+        <td ng-include src = 'checkbox.cat ? "files/cat.txt":""'></td>
+        <td ng-include src = 'checkbox.count ? "files/count.txt" : ""'></td>
+        <td ng-include src = 'checkbox.tax ? "files/tax.txt":""'></td>
+        <td ng-include src = 'checkbox.expir ? "files/expir.txt" : ""'></td>
     </tr>
 </table>
 </body>
