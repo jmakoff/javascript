@@ -11,13 +11,17 @@
     <script>
         angular.module("myApp",[])/*###Задача 1
          Создайте страницу с кнопкой. Разработайте сервис, который будет считать количество кликов по кнопке и выводить его в консоль. Используйте фабричную функцию для создания сервиса.
+         ###Задача 2
+         Создайте сервис из пердыдущей задачи, используя метод провайдера.
          */
-                .factory("clickCounter", function () {
+                .provider("clickCounter", function () {
                     var clickCount = 1
-                    return function (cl) {
-                         var output = cl+clickCount++
+                    return {
+                        $get: function(){
+                            return function (cl) {
+                        var output = cl+clickCount++
                         return output;
-                    }
+                    }}}
 
 
                 })

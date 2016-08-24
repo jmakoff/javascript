@@ -1,0 +1,29 @@
+<!doctype html><!--###Задача 3
+Используйте сервис $http для получения данных из файла data.json, который находится в папке data. Отобразите полученные данные на странице в виде таблицы. Предусмотрите обработку ошибок в запросе (используя Promise).
+-->
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css">
+    <script>
+        angular.module('App',[])
+                .controller('mainCtrl',["$scope", "$http", function ($scope, $http){
+                    $scope.getElements = function(){
+                        $http.get("data/data.json")
+                    }
+
+
+                }])
+
+    </script>
+</head>
+<body>
+<button class="btn-primary" ng-click="getElements">get elements</button>
+
+</body>
+</html>
