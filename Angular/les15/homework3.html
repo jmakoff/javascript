@@ -9,7 +9,12 @@
     <script src="../Libraries/angular.js"></script>
     <link href="../Libraries/bootstrap.css" rel="stylesheet">
     <script>
-        angular.module("App",[])
+        angular.module("App",[])/*###Задача 3
+         Разработайте приложение-секундомер. На странице должно быть 3 кнопки:
+         * start – начать отсчет
+         * stop – остановить отсчет
+         * clear – сброс отсчета
+         */
                 .controller("mainCtrl", function ($scope, $interval) {
                     var timer
                     $scope.time = 0;
