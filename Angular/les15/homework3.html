@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css" rel="stylesheet">
+    <script>
+        angular.module("App",[])
+                .controller("mainCtrl", function ($scope, $interval) {
+                    var timer
+                    $scope.time = 0;
+                    $scope.start = function () {
+                        timer = $interval(function () {
+                          $scope.time+=1;
+                        },100);
+                    }
+                    $scope.stop = function () {
+                        $interval.cancel(timer)
+
+                    }
+                    $scope.clear = function () {
+                        $scope.time = 0;
+                    }
+                })
+    </script>
+</head>
+<body ng-controller="mainCtrl">
+<button class="btn btn-primary" ng-click = "start()">Start</button>
+<button class="btn btn-warning" ng-click="stop()">Stop</button>
+<button class="btn btn-danger" ng-click="clear()">Clear</button>
+<div><h1>Timer: {{time}} sec</h1></div>
+
+
+</body>
+</html>
