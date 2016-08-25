@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css" rel="stylesheet">
+    <script>/*###Задача 1
+     Создайте сервис, который предоставляет стандартные математические операции – сложение, умножение и т.д. Используйте три разных способа для создания сервиса.
+     */
+    angular.module("app",[])
+            .controller("mainCtrl", ["$scope","plusService","minusService","mulService","divService", function ($scope, plusService, minusService, mulService,divService) {
+                $scope.plusClick = function () {
+                    $scope.result = plusService($scope.inp1, $scope.inp2);
+
+                }
+                $scope.minusClick=function () {
+                    $scope.result = minusService($scope.inp1, $scope.inp2)
+                }
+                $scope.mulClick = function () {
+                    $scope.result = mulService.result($scope.inp1, $scope.inp2)
+                }
+                $scope.divClick = function () {
+                    $scope.result = divService($scope.inp1, $scope.inp2);
+
+                }
+
+            }])
+            .factory("divService", function(){
+                return function (arg1,arg2) {
+                    var result = arg1/arg2;
+                    return result;
+                }
+
+            })
+            .factory("plusService", function () {
+                return function(arg1, arg2){
+                    var result = arg1+arg2;
+                    return result;
+                };
+            })
+            .provider('minusService', function () {
+                return {
+                    $get: function () {
+                        return function (arg1, arg2) {
+                            var result = arg1 - arg2;
+                            return result
+                        }
+                    }
+                }
+            })
+            .service("mulService", function(){
+                this.result = function (arg1, arg2) {
+                    return arg1*arg2;
+
+                }
+
+            })
+
+    </script>
+</head>
+<body ng-controller="mainCtrl">
+<input type="number" ng-model="inp1" ng-class="form-control">
+<input type="number" ng-model="inp2" ng-class="form-control">
+<button class="btn btn-default" ng-click="plusClick()">Plus(+)</button>
+<button class="btn btn-default" ng-click="minusClick()">Minus(-)</button>
+<button class="btn btn-default" ng-click="mulClick()">Multiple(*)</button>
+<button class="btn btn-default" ng-click = "divClick()">Divide(/)</button>
+<div><h1>{{result}}</h1></div>
+
+</body>
+</html>
