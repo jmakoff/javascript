@@ -1,0 +1,41 @@
+<!doctype html><!--###Задача 1
+Создайте страницу с произвольным количеством блоков текста с заголовками. Создайте список заголовков вверху страницы. Используя сервис $anchorScroll, реализуйте навигацию на странице.При нажатии на заголовок в списке вверху страницы, страница должна быть автоматически прокручена до блока текста с соответствующим заголовком.
+-->
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <script>
+        angular.module("App", [])
+                .controller("mainCtrl",['$scope', '$anchorScroll', '$location', function ($scope, $anchorScroll, $location) {
+
+                    $scope.ancScrl = function(id){
+                        var hush = $location.hash(id);
+                    }
+
+                }])
+    </script>
+
+</head>
+<body ng-controller="mainCtrl">
+<h1><strong>List of Headers:</strong></h1>
+<h1><strong><ol>
+    <li ng-click="ancScrl('first')">First</li>
+    <li ng-click="ancScrl('second')">Second</li>
+    <li ng-click="ancScrl('third')">Third</li>
+    <li ng-click="ancScrl('fourth')">Fourth</ling>
+</ol></strong></h1>
+<h1 id = "first">First header</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, asperiores culpa dicta dolorum exercitationem facere ipsam iste magnam magni numquam odit officiis quia quo rerum saepe temporibus vel vero voluptatum.</p>
+<h2 id = "second">Second header</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, nam, soluta! Alias architecto eius fugiat nihil nobis perspiciatis quaerat quis, veritatis! Aliquid consectetur cupiditate deleniti est in, ipsam maxime praesentium?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum illum neque numquam perspiciatis quis. Dolor esse impedit minus nulla odio sapiente temporibus. Error natus praesentium provident reiciendis saepe sit tempora!</p>
+<h3 id = "Third">Third header</h3>
+<p>Some text here</p>
+<h3 id= "fourth">Fourth</h3>
+<p>something another</p>
+</body>
+</html>

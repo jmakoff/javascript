@@ -1,0 +1,37 @@
+<!doctype html><!--###Задача 3
+Разработайте сервис, которой можно будет использовать для записи данных в cookie. Продемонстрируйте работу сервиса.
+                                                                                                                                                                                                                                                                                        -->
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css">
+    <script>
+        angular.module("App",[])
+                .factory("cookieServis", [ "$cookies" , function ( $cookies) {
+                    return {
+                       create: function (id, val){
+                           $cookies.put(id, val)
+
+                       };
+                    }
+
+                }])
+                .controller($scope, function ($scope) {
+                    $scope.add = function () {
+
+                    }
+
+                })
+    </script>
+</head>
+<body ng-controller="mainCtrl">
+<button ng-click="add()">Add coockies</button>
+<div>{{}}</div>
+
+</body>
+</html>

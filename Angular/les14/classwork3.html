@@ -9,12 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="../Libraries/angular.js"></script>
-    <link href="../Libraries/bootstrap.css">
+    <link href="../Libraries/bootstrap.css" rel="stylesheet">
     <script>
         angular.module('App',[])
                 .controller('mainCtrl',["$scope", "$http", function ($scope, $http){
                     $scope.getElements = function(){
-                        $http.get("data/data.json")
+                        $http.get("data/data.json").then(function success (response) {
+                            $scope.table = response.data;
+                        },
+                        function error(response) {
+                            alert("error: "+ response.statusText);
+                        })
+
                     }
 
 
@@ -22,8 +28,17 @@
 
     </script>
 </head>
-<body>
-<button class="btn-primary" ng-click="getElements">get elements</button>
-
+<body ng-controller="mainCtrl">
+<button class="btn-default" ng-click="getElements()">get elements</button>
+<table class="table">
+    <thead>
+    <td>name</td>
+    <td>price</td>
+    </thead>
+    <tr ng-repeat = "item in table">
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+    </tr>
+</table>
 </body>
 </html>
