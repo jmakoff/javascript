@@ -22,10 +22,19 @@
                                 int = $interval(function(){
                                     $scope.timer += 1
                                 }, 1000)
+
+                            }
+                            this.timer = function () {
+                                return $scope.timer
                             }
                         }
                     }
                 })
+
+
+
+
+
 
     </script>
 </head>

@@ -1,0 +1,33 @@
+<!doctype html><!--###Задача 2
+Создайте директиву, которая на основе массива будет создавать определенное количество параграфов:
+1) генерация должна происходить не с помощью jqLite, а с помощью шаблона,
+2) директиву можно применить только как атрибут,
+3) сгенерированный контент должен полностью заменить собой элемент, к которому применяется директива,
+4) у неё должен быть независимый scope.
+-->
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <script>
+        angular.module('App', [])
+                .directive("myDir", function () {
+                    return {
+                        scope:{arr:'=myDir'},
+                        restrict: "A",
+                        replace: true,
+                        template:"<p ng-repeat='item in arr'>{{item}}</p>"
+
+                    }
+                })
+
+    </script>
+</head>
+<body my-dir="[1,3,4,'dfvdvscsdc',23,12321]">
+
+</body>
+</html>

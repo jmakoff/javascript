@@ -1,0 +1,35 @@
+<!doctype html><!--###Задача 3
+Создайте директиву для генерации меню.
+В качестве источника данных директива должна использовать массив объектов,
+одно из свойств объекта должено содержать текст элемента меню,
+второе свойство должно использоватся для определения адреса перехода при клике по элементу меню.
+
+-->
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <style>
+        h1{
+            display: inline;
+        }
+    </style>
+    <script>
+        angular.module("App", [])
+                .directive("myDir", function () {
+                    return{
+                        scope:{arg :'=myDir'},
+                        template:"<h1 ng-repeat='item in arg'><a href='{{item.link}}'>{{item.name}}</a>&nbsp; &nbsp;&nbsp;</h1>"
+                    }
+                })
+
+    </script>
+</head>
+<body my-dir="[{name:'home', link:'#/home'},{name:'out', link:'#/out'},{name:'service', link:'#/service'}]">
+
+</body>
+</html>

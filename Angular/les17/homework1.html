@@ -1,0 +1,62 @@
+<!doctype html>
+<!--###Задача 1
+Создайте пользовательскую директиву, которой можно передать массив объектов, а результатом её работы будет сгенерированная таблица.
+Столбцы таблицы, будут соответствовать свойствам объекта. Используйте подход с link function и генерацию элементов с помощью jqLite.
+-->
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <link rel="stylesheet" href="../Libraries/bootstrap.css">
+    <script>
+        angular.module("app", [])
+                .controller('mainCtrl', ["$scope", function ($scope) {
+                    $scope.items = [
+                        {name: "B Item", price: 10.9, category: "Category 1", count: 10, tax: 1.12, expiration: 10},
+                        {name: "A Item", price: 1.1, category: "Category 1", count: 8, tax: 0.55, expiration: 12},
+                        {name: "D Item", price: 2.6, category: "Category 2", count: 7, tax: 0.22, expiration: 5},
+                        {name: "C Item", price: 17.5, category: "Category 2", count: 33, tax: 2.77, expiration: 10}
+                    ];
+                }])
+                .directive('myArr', function () {
+
+
+                    return {
+                        scope: {arr: '=myArr'},
+
+                        link: function (scope, el, attr) {
+                            var tab = scope.arr;
+                            var table = angular.element('<table class="table">');
+                            var thead = angular.element('<thead>');
+                            for(var key in tab[0]) {
+                                thead.append(angular.element('<th>').text(key));
+                            }
+                            var tbody = angular.element('<tbody>');
+                            for(var i = 0; i < tab.length; i++)  {
+                                var row = angular.element('<tr>');
+                                for(var key in tab[i]) {
+                                    row.append(angular.element('<td>').text(tab[i][key]));
+                                }
+                                tbody.append(row);
+
+                            }
+                            table.append(thead);
+                            table.append(tbody);
+                            el.append(table);
+
+
+                        }
+                    }
+
+                })
+    </script>
+</head>
+<body ng-controller="mainCtrl" >
+<div my-arr="items"></div>
+
+</body>
+</html>
