@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src=" ../Libraries/angular.js"></script>
+    <link rel="stylesheet" href="../Libraries/bootstrap.css">
+    <script>
+        angular.module("App", [])
+                .controller('mainCtrl',["$scope", function ($scope) {
+                    $scope.list = [1,2,34,4,5,6,4,34,5,6]
+                }])
+                .directive('myDir', function () {
+                    return {
+                        scope:{list: "=myDir"},
+                        template: "<h1>List: </h1><li ng-repeat='item in list track by $index'> {{item}}</li>"
+                }
+                })
+
+
+        
+    </script>
+            
+</head>
+<body ng-controller="mainCtrl" >
+<div my-dir="list"></div>
+
+</body>
+</html>
