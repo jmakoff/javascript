@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="App"><!--###Задача 2 
+Создайте две директивы. Первая создает список ul с произвольным количеством элементов. Вторая директива добавляет четным элементам списка CSS класс ‘red’ со следующим значением: 
+```
+.red {
+color: red
+}
+```
+Обе директивы используются в качестве атрибутов и применяются к одному и тому же элементу. При решении задачи используйте приоритет директив.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <style>
+        .red {
+            color: red
+        }
+    </style>
+    <script>
+        angular.module("App", [])
+                .directive("firstDir", function () {
+                    return {
+
+                        post: function (scope, element, attrs) {
+                            scope: {data: [1, 2, 3, 45, 5, 543, 22]};
+                            var ul = angular.element('<ul></ul>');
+                            for (var i = 0; i < scope.data.length; i++) {
+                                ul.append(angular.element('<li></li>').html(scope.data[i]));
+                            }
+                            element.append(ul);
+                        }
+                    }
+
+                })
+                .directive("secDir", function () {
+                    return {
+                        priority: 2,
+                        link: function (scope, element, attr) {
+                            var li = element.find('li');
+                            for (var i = 0; i < li.length; i++) {
+                                angular.element(li[i]).addClass(attr.secDir);
+
+                            }
+                        }
+                    }
+                })
+    </script>
+</head>
+<body >
+<div first-dir sec-dir="red"></div>
+
+</body>
+</html>

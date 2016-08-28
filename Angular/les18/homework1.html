@@ -30,13 +30,7 @@
     <script>
         var app = angular.module("App",[])
 
-                app.directive("menuDir", function () {
-                    return{
-                        template:"<div ng-repeat='item in items'> <h1>&nbsp;{{item.name}}&nbsp;</h1></div>"
 
-                    }
-
-                })
         app.controller("myCtrl", function ($scope) {
             $scope.items = [
                 { name: "Table", price: 44.10 },
@@ -45,14 +39,33 @@
                 { name: "Picture", price: 112.70 },
                 { name: "Lamp", price: 28.31 }
             ];
-
-
+            $scope.currCont = $scope.items[0].price;
+            $scope.changeCont = function (index) {
+                $scope.currCont = $scope.items[index].price;
+        }
         })
+        app.directive("menuDir", function () {
+            return {
+
+                controller: 'myCtrl',
+                scope:false,
+                template: "<ul><li ng-repeat='item in items track by $index' ng-click='changeCont($index)'>{{item.name}}</li> </ul><br>"
+            }
+        })
+        app.directive('showCont', function () {
+            return {
+                scope: false,
+                controller: 'myCtrl' ,
+                template: '<p >Price:{{currCont}}</p>'
+
+            }
+        });
 
     </script>
 </head>
 <body ng-controller="myCtrl">
 <div menu-dir></div>
+<div show-cont></div>
 
 </body>
 </html>

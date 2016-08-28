@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css"rel="stylesheet">
+    <style>
+        .container-dialog {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .dialog {
+            border: 5px solid darkslategrey;
+            background-color: white;
+            border-radius: 10px;
+            width: 400px;
+            height: 200px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+</style>
+        <script>
+        var app = angular.module('App', []);
+        app.directive('dialogBox', function () {
+            return {
+                restrict: 'AE',
+                transclude: true,
+                template: '<div class="container-dialog"><div class="dialog" ng-transclude></div></div>'
+            }
+        });
+    </script>
+</head>
+<body>
+<div dialog-box > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa esse, eum facere modi quae quaerat qui! Ab alias at corporis, cumque ducimus earum eum fugit laboriosam nemo recusandae voluptatibus.<br>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium consequuntur doloribus eos inventore itaque, laboriosam magni officia possimus quam quidem quisquam reiciendis sunt suscipit tenetur totam ullam veritatis voluptate?<br>
+something else</div>
+
+</body>
+</html>
