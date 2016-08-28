@@ -1,0 +1,13 @@
+<form novalidate name="myForm">
+    <label>Username</label>
+    <input type='text' ng-model="newUser.username" required ng-pattern="/^[A-Za-z]*$/">
+    <label>Login</label>
+    <input type='text' ng-model="newUser.login" required ng-pattern="/^[A-Za-z0-9]*$/">
+    <label>Password (without specialsymbols)</label>
+    <input type='text' ng-model="newUser.password" required ng-pattern="/^[A-Za-z0-9]*$/">
+    <label>Retype Password</label>
+    <input type='text' ng-model="newUser.repassword" required ng-pattern="newUser.password">
+    <label>Email</label >
+    <input type='email' ng-model="newUser.email" required  >
+    <input type="button" value="Add" ng-disabled="myForm.$invalid">
+</form>

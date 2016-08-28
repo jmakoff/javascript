@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="App"><!--###Задача 2
+Создайте директиву, которая создает форму и добавляет ее на страницу. В должны быть следующие поля:
+Username, login, password, email.
+-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cw3</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css">
+    <style>
+        input{
+            display: block;
+        }
+        input.ng-valid.ng-dirty {
+            background-color: lightgreen;
+        }
+        input.ng-invalid.ng-dirty {
+            background-color: lightcoral;
+        }
+
+    </style>
+    <script>
+        angular.module("App", [])
+                .directive('addForm', function () {
+                    return{
+                        templateUrl: "files/1.html"
+                    }
+
+                })
+    </script>
+</head>
+<body add-form>
+
+
+</body>
+</html>
