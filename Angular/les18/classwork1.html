@@ -1,0 +1,36 @@
+<!doctype html><!--###Задача 1
+Создайте директиву, которая создает кнопку, при нажатии на которую запускается счетчик (на экран начинают выводиться числа в возрастающей последовательности с интервалом в 1 с).
+-->
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css">
+    <script>
+        angular.module("App",[])
+                .directive('btnClick', function () {
+                    return{
+                        template: '<button class="btn btn-success" ng-click="click()">Click me!</button><h1>{{timer}}</h1>',
+                        controller: function ($scope, $interval) {
+                            var int
+                            $scope.timer = 0;
+                            $scope.click = function() {
+                                int = $interval(function(){
+                                    $scope.timer += 1
+                                }, 1000)
+                            }
+                        }
+                    }
+                })
+
+    </script>
+</head>
+<body>
+<div btn-click ></div>
+
+</body>
+</html>

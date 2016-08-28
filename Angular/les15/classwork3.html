@@ -1,37 +1,54 @@
-<!doctype html><!--###Задача 3
-Разработайте сервис, которой можно будет использовать для записи данных в cookie. Продемонстрируйте работу сервиса.
-                                                                                                                                                                                                                                                                                        -->
-<html lang="en" ng-app="App">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="../Libraries/angular.js"></script>
-    <link href="../Libraries/bootstrap.css">
-    <script>
-        angular.module("App",[])
-                .factory("cookieServis", [ "$cookies" , function ( $cookies) {
-                    return {
-                       create: function (id, val){
-                           $cookies.put(id, val)
 
-                       };
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-cookies.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <title></title>
+    <script>
+        var app = angular.module('myApp', ['ngCookies'])
+                .controller('mainCtrl', ['$scope', '$cookies','CookieServ', function ($scope, $cookies,CalculatorService) {
+                    $scope.cookieId = '';
+                    $scope.cookieVal = '';
+                    $scope.output = [];
+                    var myCookie = 'cookies on this site: ';
+                    $scope.new=function(){
+                        CalculatorService.makeCookie($scope);
+                        console.log($scope.output);
+                        console.log(myCookie);
                     }
+
+
 
                 }])
-                .controller($scope, function ($scope) {
-                    $scope.add = function () {
+                .factory('CookieServ', ['$cookies', function ($cookies) {
+                    return {
+                        makeCookie : function ($scope) {
+                            var now = new Date(),
+                                    exp = new Date(now.getFullYear() + 1, now.getMonth(), now.getDate());
+                            $cookies.put($scope.cookieId, $scope.cookieVal, { expires: exp });
 
-                    }
-
-                })
+                            //Get cookie
+                            var myCookie = $cookies.get($scope.cookieId);
+                            $scope.output.push({val: $scope.cookieVal, id: $scope.cookieId});
+                        }
+                    };
+                }])
     </script>
 </head>
-<body ng-controller="mainCtrl">
-<button ng-click="add()">Add coockies</button>
-<div>{{}}</div>
+<body>
+<div class="panel panel-primary" ng-controller="mainCtrl">
+    <label>cooke ID: <input class="input-lg" ng-model="cookieId"></label><br />
+    <label>cooke Value: <input class="input-lg" ng-model="cookieVal"></label><br />
 
+    <input type="button" class="btn-lg btn-success" value="Create Cookie" ng-click="new()">
+
+    <h2 ng-repeat="item in output">val:  {{item.val}}  &nbsp;&nbsp;&nbsp; id: {{item.id}}</h2>
+</div>
 </body>
 </html>

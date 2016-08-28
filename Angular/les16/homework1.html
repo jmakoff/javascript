@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Libraries/angular.js"></script>
+    <script src="../Libraries/angular_route.js"></script>
+    <link href="../Libraries/bootstrap.css">
+    <script>
+        var people = [{name: 'Vasya', age: 20, email: 'vasya@mail.ru', employed: false},
+            {name: 'Masha', age: 25, email: 'm@m', employed: true},
+            {name: 'Petya', age: 27, email: 'petya@stuff', employed: true},
+            {name: 'John', age: 36, email: 'johnDoe@mail', employed: true},
+            {name: 'Jane', age: 28, email: 'janeDoe@mail', employed: false}]
+        angular.module('App',['ngRoute'])
+                .config(function ($routeProvider) {
+                    $routeProvider
+                            .when('/home',{
+                                templateUrl:'task/home.html',
+                                controller:'homeCtrl'
+                            })
+                            .when('/contact', {
+                                templateUrl:'task/contact.html'
+                    })
+                            .otherwise({
+                                redirectTo:'/home'
+                            })
+
+                })
+                .controller('homeCtrl', function ($scope) {
+                    $scope.people = people;
+
+                })
+    </script>
+</head>
+<body>
+<form class="panel">
+<a href="#/home">HOME</a>&nbsp;&nbsp;
+<a href="#/contact">CONTACT</a>
+</form>
+<div ng-view></div>
+
+</body>
+</html>

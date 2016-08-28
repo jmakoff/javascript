@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="app">
+<html lang="en"ng-app="App">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,19 +8,17 @@
     <title>Document</title>
     <script src="../Libraries/angular.js"></script>
     <script>
-        angular.module("app", [])
-                .config(function ($routeProvider) {
-                    $routeProvider
-                            .when("/", )
-
+        angular.module("App",[])
+                .directive('customDirective', function () {
+                    return{
+                        transclude: true,
+                        template:"<button ng-transclude></button>"
+                    }
                 })
     </script>
 </head>
 <body>
-<ul>
-    <li><a href="Task/view1.html">view 1</a> </li>
-    <li><a href="Task/view2.html">view 2</a></li>
-</ul>
+<div custom-directive>’myButton’</div>
 
 </body>
 </html>

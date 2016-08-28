@@ -1,5 +1,8 @@
-<!doctype html>
-<html lang="en" ng-app="app">
+
+<!--###Задача 1
+Разработайте сервис, которой можно будет использовать для кэширования данных. В кэш можно поместить запись и установить время удаления этой записи. Продемонстрируйте работу сервиса.
+--><!doctype html>
+<html lang="en" ng-app = "App">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,68 +11,57 @@
     <title>Document</title>
     <script src="../Libraries/angular.js"></script>
     <link href="../Libraries/bootstrap.css" rel="stylesheet">
-    <script>/*###Задача 1
-     Создайте сервис, который предоставляет стандартные математические операции – сложение, умножение и т.д. Используйте три разных способа для создания сервиса.
-     */
-    angular.module("app",[])
-            .controller("mainCtrl", ["$scope","plusService","minusService","mulService","divService", function ($scope, plusService, minusService, mulService,divService) {
-                $scope.plusClick = function () {
-                    $scope.result = plusService($scope.inp1, $scope.inp2);
+    <style>
+        input{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        angular.module("App", [])
+                .factory("cacheSrv",['$cacheFactory', '$timeout', function ($cacheFactory, $timeout) {
+                    var allCache = [];
 
-                }
-                $scope.minusClick=function () {
-                    $scope.result = minusService($scope.inp1, $scope.inp2)
-                }
-                $scope.mulClick = function () {
-                    $scope.result = mulService.result($scope.inp1, $scope.inp2)
-                }
-                $scope.divClick = function () {
-                    $scope.result = divService($scope.inp1, $scope.inp2);
+                    var cache = $cacheFactory("cacheId");
+                    return{
+                        createCache:function (id, value, time) {
+                            if (angular.isUndefined(id) || angular.isUndefined(value)|| angular.isUndefined(time)) {
+                                alert('Error, please use all input places');
+                                return false;
+                            }
+                            cache.put(id,value)
+                            alert('Cach created. Id: '+id+'. Value: '+ value);
+                            $timeout(function () {
+                                cache.remove(id);
+                            }, time);
+                            return true;
 
-                }
 
-            }])
-            .factory("divService", function(){
-                return function (arg1,arg2) {
-                    var result = arg1/arg2;
-                    return result;
-                }
 
-            })
-            .factory("plusService", function () {
-                return function(arg1, arg2){
-                    var result = arg1+arg2;
-                    return result;
-                };
-            })
-            .provider('minusService', function () {
-                return {
-                    $get: function () {
-                        return function (arg1, arg2) {
-                            var result = arg1 - arg2;
-                            return result
                         }
+
                     }
-                }
-            })
-            .service("mulService", function(){
-                this.result = function (arg1, arg2) {
-                    return arg1*arg2;
 
-                }
+                    
+                }])
+                .controller("ctrl",['$scope', "cacheSrv", function ($scope, cacheSrv) {
+                    $scope.createCach = function () {
+                        cacheSrv.createCache($scope.cacheId, $scope.cacheValue, $scope.cacheTime);
+                    }
 
-            })
 
+                }])
     </script>
 </head>
-<body ng-controller="mainCtrl">
-<input type="number" ng-model="inp1" ng-class="form-control">
-<input type="number" ng-model="inp2" ng-class="form-control">
-<button class="btn btn-default" ng-click="plusClick()">Plus(+)</button>
-<button class="btn btn-default" ng-click="minusClick()">Minus(-)</button>
-<button class="btn btn-default" ng-click="mulClick()">Multiple(*)</button>
-<button class="btn btn-default" ng-click = "divClick()">Divide(/)</button>
-<div><h1>{{result}}</h1></div>
+<body ng-controller="ctrl">
+<label class="label label-default">Enter ID:</label>
+<input type="text" class="input" ng-model="cacheId">
+<label class="label label-default">Enter Cach Value:</label>
+<input type="text" class="input " ng-model="cacheValue">
+<label class="label label-default">Enter Cach Time(ms):</label>
+<input type="text" class="input " ng-model="cacheTime">
+<button ng-click="createCach()">CREATE CACHE</button>
+
 
 </body>
 </html>
