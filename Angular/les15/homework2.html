@@ -17,19 +17,43 @@
          */
                 .controller("mainCtrl", function ($scope, $interval) {
                     var timer
-                    $scope.time = 0;
+                    $scope.hours = 0;
+                    $scope.min=0;
+                    $scope.sec = 0;
+                    $scope.ms = 0;
+
                     $scope.start = function () {
                         timer = $interval(function () {
-                          $scope.time+=1;
-                        },100);
+                          $scope.ms+= 1;
+                            if($scope.ms>1000){
+                                $scope.ms=0;
+                                $scope.sec+=1;
+
+                            }
+                            if($scope.sec>=60){
+                                $scope.sec = 0;
+                                $scope.min+=1;
+
+                            }
+                            if($scope.min>=60){
+                                $scope.min=0;
+                                $scope.hours+=1;
+                            }
+                        },1);
+
+
                     }
                     $scope.stop = function () {
                         $interval.cancel(timer)
 
                     }
                     $scope.clear = function () {
-                        $scope.time = 0;
+                        $scope.hours = 0;
+                        $scope.min=0;
+                        $scope.sec = 0;
+                        $scope.ms = 0;
                     }
+
                 })
     </script>
 </head>
@@ -37,7 +61,7 @@
 <button class="btn btn-primary" ng-click = "start()">Start</button>
 <button class="btn btn-warning" ng-click="stop()">Stop</button>
 <button class="btn btn-danger" ng-click="clear()">Clear</button>
-<div><h1>Timer: {{time}} sec</h1></div>
+<div><h1>Timer: {{hours}}:{{min}}:{{sec}}:{{ms}}sec</h1></div>
 
 
 </body>
