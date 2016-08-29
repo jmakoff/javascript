@@ -18,49 +18,111 @@
         }
     </style>
     <script>
-        angular.module("App", [])
-                .factory("cacheSrv",['$cacheFactory', '$timeout', function ($cacheFactory, $timeout) {
-                    var allCache = [];
-
-                    var cache = $cacheFactory("cacheId");
-                    return{
-                        createCache:function (id, value, time) {
-                            if (angular.isUndefined(id) || angular.isUndefined(value)|| angular.isUndefined(time)) {
-                                alert('Error, please use all input places');
-                                return false;
-                            }
-                            cache.put(id,value)
-                            alert('Cach created. Id: '+id+'. Value: '+ value);
+        var app = angular.module('App', []);
+        app.factory('cacheServe', ['$cacheFactory', '$timeout', function ($cacheFactory, $timeout) {
+            var cache = $cacheFactory('cacheInst');
+            var keys = [];
+            return {
+                create: function (id, value, exp) {
+                    if (angular.isUndefined(id) || angular.isUndefined(value)) {
+                        alert('Please, enter all data');
+                        return false;
+                    }
+                    var existCache = cache.get(id);
+                    cache.put(id, value);
+                    keys.push(id);
+                    if (angular.isDefined(existCache)) {
+                        alert('Cache data with id = ' + id + 'already exist;');
+                    }
+                    else {
+                        alert('Created new cache data with: id = ' + id + '; value = ' + value + ';');
+                    }
+                    if (angular.isDefined(exp)) {
+                        var expTime = parseInt(exp);
+                        if (isNaN(expTime)) {
+                            alert('Enter valid time!!!')
+                        }
+                        else {
                             $timeout(function () {
                                 cache.remove(id);
-                            }, time);
-                            return true;
-
-
-
+                                delete keys[keys.indexOf(id)];
+                            }, expTime);
                         }
-
                     }
-
-                    
-                }])
-                .controller("ctrl",['$scope', "cacheSrv", function ($scope, cacheSrv) {
-                    $scope.createCach = function () {
-                        cacheSrv.createCache($scope.cacheId, $scope.cacheValue, $scope.cacheTime);
+                    return true;
+                },
+                remove: function (id) {
+                    if (angular.isUndefined(id)) {
+                        alert('Error: not all required data set');
+                        return false;
                     }
+                    if (angular.isUndefined(cache.get(id))) {
+                        alert('No cache data with id = ' + id + '.');
+                        return false;
+                    }
+                    cache.remove(id);
+                    delete keys[keys.indexOf(id)];
+                    return true;
+                },
+                get: function (id) {
+                    return cache.get(id);
+                },
+                getAll: function () {
+                    var cacheData = {};
+                    keys.forEach(function (key) {
+                        cacheData[key] = cache.get(key);
+                    });
+                    return cacheData;
+                }
+            }
+        }]);
+        app.controller('mainCtrl', ['$scope', 'cacheServe', function($scope, cacheServe) {
+            $scope.cacheData = cacheServe.getAll();
+            $scope.createCache = function () {
+                cacheServe.create($scope.cacheId, $scope.cacheValue, $scope.cacheTime);
+                $scope.cacheData = cacheServe.getAll();
+            };
+            $scope.removeCache = function () {
+                cacheServe.remove($scope.rmCacheId);
+                $scope.cacheData = cacheServe.getAll();
+            };
+            $scope.refreshCache = function () {
+                $scope.cacheData = cacheServe.getAll();
+            };
+        }]);
 
-
-                }])
     </script>
 </head>
-<body ng-controller="ctrl">
+<div>
+    <h3>Cache list:</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="(id, value) in cacheData">
+            <td>{{id}}</td>
+            <td>{{value}}</td>
+        </tr>
+    </table>
+
+</div>
+<body ng-controller="mainCtrl">
 <label class="label label-default">Enter ID:</label>
 <input type="text" class="input" ng-model="cacheId">
 <label class="label label-default">Enter Cach Value:</label>
 <input type="text" class="input " ng-model="cacheValue">
 <label class="label label-default">Enter Cach Time(ms):</label>
 <input type="text" class="input " ng-model="cacheTime">
-<button ng-click="createCach()">CREATE CACHE</button>
+<button ng-click="createCache()">CREATE CACHE</button>
+<div>
+    <h3>Remove cache:</h3>
+    <label>ID: </label>
+    <input type="text" ng-model="rmCacheId"><br>
+    <input type="button" value="Remove Cache" ng-click="removeCache()">
+</div>
 
 
 </body>
