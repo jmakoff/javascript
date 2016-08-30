@@ -1,57 +1,65 @@
-<!doctype html>
-<html lang="en" ng-app="App"><!--###Задача 2 
-Создайте две директивы. Первая создает список ul с произвольным количеством элементов. Вторая директива добавляет четным элементам списка CSS класс ‘red’ со следующим значением: 
+<!DOCTYPE html><!--###Задача 2
+Создайте две директивы. Первая создает список ul с произвольным количеством элементов. Вторая директива добавляет четным элементам списка CSS класс ‘red’ со следующим значением:
 ```
 .red {
 color: red
 }
 ```
-Обе директивы используются в качестве атрибутов и применяются к одному и тому же элементу. При решении задачи используйте приоритет директив.
--->
+Обе директивы используются в качестве атрибутов и применяются к одному и тому же элементу. При решении задачи используйте приоритет директив.-->
+<html lang="en" ng-app="App">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="../Libraries/angular.js"></script>
+    <meta charset="utf-8">
+    <title>HW2</title>
     <style>
         .red {
             color: red
         }
     </style>
-    <script>
-        angular.module("App", [])
-                .directive("firstDir", function () {
-                    return {
+    <link href="../Libraries/bootstrap.css" rel="stylesheet" />
+    <script src="../Libraries/angular.js"></script>
 
+    <script>
+        'use strict';
+        var app = angular.module('App', []);
+        app.controller('mainCtrl', ['$scope', function ($scope) {
+            $scope.data = ['first', 'second', 'third', 'fourth', 'fiveth'];
+        }]);
+        app.directive('makeLi', function () {
+            return {
+
+                priority: 1,
+                compile: function () {
+                    return {
+                        restrict: 'A',
                         post: function (scope, element, attrs) {
-                            scope: {data: [1, 2, 3, 45, 5, 543, 22]};
-                            var ul = angular.element('<ul></ul>');
-                            for (var i = 0; i < scope.data.length; i++) {
-                                ul.append(angular.element('<li></li>').html(scope.data[i]));
+                            var data = scope.data;
+                            var ul = angular.element('<ul class="list-group"></ul>');
+                            for (var i = 0; i < data.length; i++) {
+                                ul.append(angular.element('<li class="list-group-item"></li>').html(data[i]));
                             }
                             element.append(ul);
                         }
                     }
-
-                })
-                .directive("secDir", function () {
-                    return {
-                        priority: 2,
-                        link: function (scope, element, attr) {
-                            var li = element.find('li');
-                            for (var i = 0; i < li.length; i++) {
-                                angular.element(li[i]).addClass(attr.secDir);
-
-                            }
+                }
+            }
+        });
+        app.directive('styleLi', function () {
+            return {
+                restrict: 'A',
+                priority: 2,
+                link: function (scope, element, attr) {
+                    var li = element.find('li');
+                    for (var i = 0; i < li.length; i++) {
+                        if (i % 2) {
+                            angular.element(li[i]).addClass(attr.styleLi);
                         }
                     }
-                })
+                }
+            }
+        });
     </script>
 </head>
-<body >
-<div first-dir sec-dir="red"></div>
-
+<body ng-controller="mainCtrl">
+<div class="panel panel-primary" make-li style-li="red"></div>
 </body>
 </html>
