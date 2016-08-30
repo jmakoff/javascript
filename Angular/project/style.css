@@ -111,3 +111,8 @@ body{
 .fth_s{
     background-image: url("images/srvbtn4.png");
 }
+.services2{
+    height: 800px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
