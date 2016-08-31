@@ -184,6 +184,7 @@ body{
 
 .p_txt{
     font-size: 15px;
+    color: #99a2a6;
 }
 .p_btn{
     display: inline-block;
@@ -197,5 +198,224 @@ body{
     border: thin solid #00e1ff;
 }
 .photos{
+    height: 400px;
 
 }
+.photo {
+    display:inline-block;
+    height: 50%;
+    width: 16.5%;
+    float: left;
+    background-size: cover;
+
+}
+.f_photo{
+    background-image: url("filter_img/image1.jpg");
+}
+.s_photo{
+    background-image: url("filter_img/image2.jpg");
+}
+.th_photo{
+    background-image: url("filter_img/image3.jpg");
+}
+.fourth_photo{
+    background-image: url("filter_img/image4.jpg");
+}
+.fi_photo{
+    background-image: url("filter_img/image5.jpg");
+}
+.six_photo{
+     background-image: url("filter_img/image6.jpg");
+ }
+.sv_photo{
+    background-image: url("filter_img/image7.jpg");
+}
+.ei_photo{
+    background-image: url("filter_img/image8.jpg");
+}
+.nine_photo{
+    background-image: url("filter_img/image12.jpg");
+}
+.t_photo{
+     background-image: url("filter_img/image9.jpg");
+ }
+.el_photo{
+      background-image: url("filter_img/image10.jpg");
+  }
+.tw_photo{
+    background-image: url("filter_img/image11.jpg");
+}
+.counter{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    background-color: black;
+    height: 300px;
+}
+.stat{
+    background-size: 100% 100%;
+    height:40%;
+    width: 40px;
+    left:38%;
+    position: relative;
+}
+.icon1{
+    background-image: url("images/stat_icon1.png");
+}
+.icon2{
+    background-image: url("images/stat_icon2.png");
+}
+.icon3{
+    background-image: url("images/stat_icon3.png");
+}
+.icon4{
+    background-image: url("images/stat_icon4.png");
+
+
+
+}
+.under{
+    font-size: 50%;
+}
+.lab{
+
+    justify-content: center;
+    display:flex;
+    color: white
+}
+.group{
+    font-family: "Raleway", sans-serif;
+    font-size: 130%;
+    height: 40%;
+    margin: 3%;
+}
+.about{
+    height: 1500px;
+
+
+}
+.about_txt{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+.about_man{
+    justify-content: center;
+    display: flex;
+    height: 20%;
+    top: 10%;
+    position: relative;
+
+}
+.man_block{
+    width:15%;
+    background-color: #f7f7f7;
+    margin: 0.5%;
+}
+
+.image_man{
+
+    background-size: 100% 100%;
+    background-image: url("images/man1.jpg");
+    height: 60%;
+
+}
+.man_2{
+    background-image: url("images/man4.jpg");
+}
+.middle{
+    opacity: 0.5;
+    justify-content: center;
+    display: flex;
+    font-family: "Reilway", sans-serif;
+    color: #3f4244;
+    font-size: 15px;
+    text-align: center;
+}
+.social{
+    position: relative;
+    left:10%;
+    display: inline-block;
+    width: 18%;
+    height:10%;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+       
+}
+.icon{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    left: 30%;
+}
+#icon1{
+    background: no-repeat url("images/Shape2.png");
+}
+#icon1:hover{
+    background-color: #36609e;
+}
+#icon2{
+    background: no-repeat url("images/Shape3.png");
+}
+#icon2:hover{
+    background-color: #2ca9e1;
+}
+#icon3{
+    background: no-repeat url("images/Shape4.png");
+}
+#icon3:hover{
+    background-color: #db5442;
+}
+#icon4{
+    background: no-repeat url("images/Shape5.png");
+ }
+#icon4:hover{
+    background-color: #ee558e;
+}
+.news_t{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+    }
+.news_bl{
+    position: relative;
+    top: 15%;
+    height: 40%;
+}
+.item_news{
+    margin: auto;
+    width: 60%;
+    height: 20%;
+}
+.date_news{
+    float:left;
+    width: 10%;
+    height: 100%;
+}
+.big_numb{
+    font-family: 'Raleway', sans-serif;
+    font-size: 400%;
+    color: #00e1ff;
+}
+.data{
+    position: relative;
+    float: right;
+    width: 85%;
+    top:20%;
+}
+.more{
+    float: right;
+    position: relative;
+    top: 30%;
+    color: #00e1ff;
+}
+#hr{
+    color: #edf2f6;
+   width: 87%;
+    float: right;
+}
+
