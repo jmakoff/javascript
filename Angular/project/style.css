@@ -1,6 +1,7 @@
 body{
     height: 5000px;
     margin: 0px;
+    width:100%;
 }
 .header{
     height: 10%;
@@ -144,16 +145,16 @@ body{
     height:60%;
     width: 40%;
     top:20%;
-    left: 20%;
+    left: 17%;
     background-size: contain;
 }
 .srv_text{
     position: relative;
-    font-family: "Railway", sans-serif;
+    font-family: "Raleway", sans-serif;
     height: 11%;
     width:30%;
     top:-35%;
-    left: 55%;
+    left: 60%;
     font-size: 150%;
     color: #707274;
 }
@@ -161,9 +162,40 @@ body{
     font-size: 100%;
 }
 .btn_get{
-    top: -30%;
-    left: 55%;
+    top: -25%;
+    left: 60%;
     color: black;
     border-color: #c8cdce;
+
+}
+.portfolio{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+.portf_text{
+    font-family: "Reilway", sans-serif;
+    color: #3f4244;
+    font-size: 170%;
+    width: 60%;
+    text-align: center;
+}
+
+.p_txt{
+    font-size: 15px;
+}
+.p_btn{
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 60%;
+    padding: 3%;
+    cursor: pointer;
+}
+.p_btn:hover{
+    border: thin solid #00e1ff;
+}
+.photos{
 
 }
