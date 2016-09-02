@@ -175,7 +175,7 @@ body{
     justify-content: center;
    }
 .portf_text{
-    font-family: "Reilway", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #3f4244;
     font-size: 170%;
     width: 60%;
@@ -384,7 +384,7 @@ body{
 .news_bl{
     position: relative;
     top: 15%;
-    height: 40%;
+    height: 50%;
 }
 .item_news{
     margin: auto;
@@ -414,8 +414,79 @@ body{
     color: #00e1ff;
 }
 #hr{
+    position: relative;
+    top:5%;
     color: #edf2f6;
    width: 87%;
     float: right;
 }
+.conact{
+    top: 10%;
+    position: relative;
+    height: 500px;
+    background-color: black;
 
+}
+.white{
+    color: white;
+    margin: auto;
+    top: 10%;
+    position: relative;
+}
+.cont_txt{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.inp_form{
+    position: relative;
+    display: block;
+    height: 50%;
+    margin: auto;
+    top: 20%;
+}
+.input{
+    margin:5px;
+    display: inline-block;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: black;
+    outline: none;
+    height: 15%;
+    width: 20%;
+    color: white;
+    font-size: ;
+    font-family: "Raleway", sans-serif;
+}
+.input_1{
+    position: relative;
+    top: auto;
+    display: block;
+    width: 41%;
+}
+.btn_send{
+    border-color: #00e1ff;
+    position: relative;
+    top:12%;
+    height: 12%;
+    left: 51%;
+}
+.footer{
+    background-color: #252726;
+    height: 7%;
+    position: relative;
+    top:9%;
+}
+.txt_footer{
+    width: 17%;
+    margin: auto;
+}
+.footer_btn{
+    left: 60%;
+    margin: 3%;
+    width: 10%;
+
+}
