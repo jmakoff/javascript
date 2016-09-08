@@ -15,19 +15,20 @@
 
 <div id="output"></div>
 <script type="text/babel">
-    var MyElem = React.createClass({
-var summ =  function () {
-       var s = {this.props.inp1}+{this.props.inp2};
-       return s;
+    var inp = {
+        inp1: 4,
+        inp2: 55
     }
+    var MyElem = React.createClass({
+            render: function () {
+                var s = inp.inp1 + inp.inp2;
+                return (<h1> {s} </h1>)
 
-    render: function () {
-
-            return
-            (<h1>Your summ is {summ}</h1>)
         }
     })
-    ReactDom.render(<MyElem inp1="5" inp2="5"/>)
+
+    var container = document.getElementById("output");
+    ReactDOM.render(<MyElem {...inp}/>, container);
 
 </script>
 </body>
