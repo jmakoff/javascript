@@ -1,0 +1,36 @@
+<!doctype html><!--### Задача 3
+Создайте React компонент, который отображает на странице произвольный текст. Компонент должен иметь такие свойства: color и fontSize.
+Установите на основе этих свойств стили для компонента.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body>
+<div id="output"></div>
+
+<script type="text/babel">
+var Example = React.createClass({
+    getDefaultProps: function () {
+        return {
+          color: 'red',
+            fontSize:'20px'
+        }
+
+    },
+    render: function () {
+        return (<p style={{"backgroundColor": this.props.color, 'fontSize': this.props.fontSize}}>Hello World!!!</p> )
+    }
+})
+var container = document.getElementById('output');
+    ReactDOM.render(<Example/>, container);
+</script>
+</body>
+</html>
