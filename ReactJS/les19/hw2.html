@@ -1,0 +1,30 @@
+<!doctype html><!--### Задача 2
+Создайте React компонент, который отображает на странице форму с полями ‘name’ , ‘login’ и кнопкой Submit -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body>
+<div id="output"></div>
+<script type="text/babel">
+var MyForm = React.createClass({
+    render: function () {
+        return (
+               <form> <input defaultValue="Login"/>
+                <input defaultValue="Name" />
+                <input type="button" value="Submit" />
+               </form>
+        )}
+})
+var container = document.getElementById("output")
+ReactDOM.render(<MyForm/>, container)
+</script>
+</body>
+</html>
