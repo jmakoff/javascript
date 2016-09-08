@@ -1,0 +1,34 @@
+<!doctype html><!--### Задача 3
+Создайте React компонент,  который принимает два числа в качестве свойств (props). Компонент должен выводить на экран сумму своих свойств. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body>
+
+<div id="output"></div>
+<script type="text/babel">
+    var MyElem = React.createClass({
+var summ =  function () {
+       var s = {this.props.inp1}+{this.props.inp2};
+       return s;
+    }
+
+    render: function () {
+
+            return
+            (<h1>Your summ is {summ}</h1>)
+        }
+    })
+    ReactDom.render(<MyElem inp1="5" inp2="5"/>)
+
+</script>
+</body>
+</html>
