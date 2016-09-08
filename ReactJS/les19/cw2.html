@@ -1,0 +1,36 @@
+<!doctype html>
+<!--### Задача 1
+Используя JSX, отобразите на странице текст Hello World в теге h1
+
+### Задача 2
+Реализуйте задание задачи 1 с помощью создания React компонента
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body>
+<div id="myId"></div>
+<script type="text/babel">
+    var Hello = React.createClass({
+        getDefaultProps: function(){
+            return {
+                name: "world"
+            }
+        },
+        render: function () {
+            return (<h1> Hello {this.props.name}</h1>)
+        }
+    })
+    ReactDOM.render(<Hello/>, document.getElementById('myId'));
+
+</script>
+</body>
+</html>

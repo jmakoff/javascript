@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="App">
+<html lang="en" ng-app="App"  id="page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,34 +7,158 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>myWebSite</title>
     <link href="style.css" rel="stylesheet">
+    <link href="../Libraries/bootstrap-theme.css"rel="stylesheet">
+    <link href="../Libraries/bootstrap.css" rel="stylesheet">
     <script src="../Libraries/angular.js"></script>
+    <script src="../Libraries/angular_route.js"></script>
 
     <script src="myScript.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
-</head> <script src="ngSmoothScroll-master/dist/angular-smooth-scroll.min.js"></script>
-<body>
+    <script src="ngSmoothScroll-master/lib/angular-smooth-scroll.js"></script>
+</head>
+<body scroll ng-controller="mainCtrl">
 <div class="header">
     <div class="logo"></div>
-    <div class="menu_elements" ng-click="home()">HOME</div>
-    <div class="menu_elements">SERVICES</div>
-    <div class="menu_elements">PORTFOLIO</div>
-    <div class="menu_elements">ABOUT</div>
-    <div class="menu_elements">NEWS</div>
-    <div class="menu_elements">CONTACT</div>
+    <div class="menu_elements" scroll-to="home">HOME</div>
+    <div class="menu_elements" scroll-to="serv">SERVICES</div>
+    <div class="menu_elements"  offset="70" scroll-to="portf">PORTFOLIO</div>
+    <div class="menu_elements" offset="50" scroll-to="about">ABOUT</div>
+    <div class="menu_elements" offset="70" scroll-to="news">NEWS</div>
+    <div class="menu_elements" offset="50" scroll-to="contact">CONTACT</div>
 </div>
-<div class="home">
+<div class="home" id="home">
     <label class="label_home">WE MAKE WEBSITES</label>
-    <div class="home_btn flex">Start Tour</div>
+    <div class="home_btn flex"  offset="70" scroll-to="portf">Start Tour</div>
 </div>
-<div class="services">
-    <div class="icon_srv f_s"></div>
-    <div class="icon_srv s_s"></div>
-    <div class="icon_srv t_s"></div>
-    <div class="icon_srv fth_s"></div>
+<div class="services" id="serv" >
+    <div class="icon_srv f_s" ng-click="first()"></div>
+    <div class="icon_srv s_s" ng-click="sec()"></div>
+    <div class="icon_srv t_s" ng-click="third()"></div>
+    <div class="icon_srv fth_s" ng-click="fourth()"></div>
+    <div class="txt_srv" ng-switch on="serv">
+    <p ng-switch-when="first_icon">Some default text.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto consequatur consequuntur cum cumque debitis deserunt dolor et explicabo, magnam magni modi officiis, quia quidem, reiciendis reprehenderit velit vero voluptatibus?</p>
+    <p ng-switch-when="sec_icon">Second text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae blanditiis dolore explicabo fuga ipsa molestias.icabo fuga ipsa molestias.</p>
+    <p ng-switch-when="third_icon">Third text . A architecto consequatur consequuntur cum cumque debitis deserunt dolor et explicabo, magnam magni modi officiis, quia quidem, reiciendis reprehenderit velit vero voluptatibus?</p>
+    <p ng-switch-when="fourth_icon">Fourth text dolor sit amet, consectetur adipisicing elit. A architecto consequatur consequuntur cum cumque debitis deserunt dolor et explicabo, magnam magni modi officiis, quia quidem, reiciendis reprehenderit velit vero voluptatibus?</p>
+
+    </div>
 </div>
 <div class="services2">
+    <div class="btn_srv b1">START TOUR</div>
+    <div class="btn_srv b2">FOR ALL DEVICES</div>
+    <div class="phones"></div>
+    <div class="srv_text">Fully Responsive</div>
+    <div class="srv_text sml" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum iure perferendis possimus quae quos. Animi at dicta dignissimos dolor harum inventore, iusto molestiae molestias nam quisquam soluta temporibus, ut voluptate?</div>
+    <div class="home_btn flex btn_get" scroll-to="contact">GET NOW</div>
+</div>
+<div class="portfolio" id="portf">
+    <label class="portf_text">Our Portfolio<hr color="#00e1ff" width="15%">
+        <p class="p_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur, consequuntur dolore dolorem doloribus, eum, facilis id impedit ipsam labore libero nihil non omnis possimus quaerat sunt tempore temporibus ut!</p>
+        <div class="p_btn" ng-click="all()">ALL</div>
+        <div class="p_btn">WEB</div>
+        <div class="p_btn">PHOTOGRAPHY</div>
+        <div class="p_btn">GRAPHIC DESIGN</div>
+    </label>
 
 </div>
+<div class="photos">
+    <div class="photo f_photo" ng-model="photo" ng-class="overlay"></div>
+    <div class="photo s_photo"></div>
+    <div class="photo th_photo"></div>
+    <div class="photo fourth_photo"></div>
+    <div class="photo fi_photo"></div>
+    <div class="photo six_photo"></div>
+    <div class="photo sv_photo"></div>
+    <div class="photo ei_photo"></div>
+    <div class="photo nine_photo"></div>
+    <div class="photo t_photo"></div>
+    <div class="photo el_photo"></div>
+    <div class="photo tw_photo"></div>
+</div>
+<div class="counter">
+    <div class="group"><div class="stat icon1"></div><p class="lab"> {{portf.proj| number}}</p><p class="lab under">COMPLETED PROJECTS</p></div>
+    <div class="group"><div class="stat icon2"></div><p class="lab"> {{portf.clicks | number}}</p><p class="lab under">CLICK PRESSED</p></div>
+    <div class="group"><div class="stat icon3"></div><p class="lab"> {{portf.mails| number}}</p><p class="lab under">MAILS SENDED</p></div>
+    <div class="group"><div class="stat icon4"></div><p class="lab"> {{portf.joked| number}}</p><p class="lab under" >JOKED TOOLS</p></div>
+
+</div>
+<div class="about" id="about">
+    <div class="about_txt"><label class="portf_text">We are the one<hr color="#00e1ff" width="15%">
+    <p class="p_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci, aliquam animi at beatae consequuntur dicta distinctio ducimus ex fuga itaque iusto laudantium libero maxime neque quas quidem rerum.</p></label>
+    </div>
+    <div class="about_man">
+        <div class="man_block" >
+            <div class="image_man"></div>
+            <label class="middle"> Alias architecto autem,  labore minima minus natus qui quidem quisquam quos sapiente sequi, sunt suscipit ut vel velit?</label>
+            <div class="social" ><div class= "icon" id="icon1"></div></div>
+            <div class="social"> <div class= "icon" id="icon2"></div></div>
+            <div class="social"><div class= "icon" id="icon3"></div></div>
+            <div class="social"><div class= "icon" id="icon4"></div></div>
+
+        </div>
+        <div class="man_block" >
+            <div class="image_man man_2"></div>
+            <label class="middle"> Alias architecto autem,  labore minima minus natus qui quidem quisquam quos sapiente sequi, sunt suscipit ut vel velit?</label>
+            <div class="social" ><div class= "icon" id="icon1"></div></div>
+            <div class="social"> <div class= "icon" id="icon2"></div></div>
+            <div class="social"><div class= "icon" id="icon3"></div></div>
+            <div class="social"><div class= "icon" id="icon4"></div></div>
+        </div>
+        <div class="man_block" >
+            <div class="image_man"></div>
+            <label class="middle"> Alias architecto autem,  labore minima minus natus qui quidem quisquam quos sapiente sequi, sunt suscipit ut vel velit?</label>
+            <div class="social" ><div class= "icon" id="icon1"></div></div>
+            <div class="social"> <div class= "icon" id="icon2"></div></div>
+            <div class="social"><div class= "icon" id="icon3"></div></div>
+            <div class="social"><div class= "icon" id="icon4"></div></div>
+        </div>
+        <div class="man_block" >
+            <div class="image_man man_2"></div>
+            <label class="middle"> Alias architecto autem,  labore minima minus natus qui quidem quisquam quos sapiente sequi, sunt suscipit ut vel velit?</label>
+            <div class="social" ><div class= "icon" id="icon1"></div></div>
+            <div class="social"> <div class= "icon" id="icon2"></div></div>
+            <div class="social"><div class= "icon" id="icon3"></div></div>
+            <div class="social"><div class= "icon" id="icon4"></div></div>
+        </div>
+
+
+    </div>
+    <div class="news_t" id="news"><label class="portf_text">Check our news<hr color="#00e1ff" width="15%">
+        <p class="p_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci, aliquam animi at beatae consequuntur dicta distinctio ducimus ex fuga itaque iusto laudantium libero maxime neque quas quidem rerum.</p></label>
+    </div>
+    <div class="news_bl">
+        <div class="item_news" ng-repeat="item in items">
+            <div class="date_news">
+                <div class="big_numb">{{item.date[0]}}</div>
+                <div class="p_txt" >{{
+                    monthNames[(item.date.split('/')[0] - 1)]}}</div>
+            </div>
+            <div class="data p_txt">{{item.text}}</div>
+            <a class="more" ng-click="more()">Read More</a>
+            <hr id ="hr" >
+
+        </div>
+    </div>
+
+
+
+</div>
+<div class="conact" id="contact"><div class="portf_text white">Contact Us<hr color="#00e1ff" width="15%"></div>
+    <p class="white p_txt cont_txt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda enim, impedit in laudantium nesciunt obcaecati quia quis repudiandae. Blanditiis dignissimos itaque laboriosam magni nesciunt optio quasi quibusdam quod ullam!</p>
+    <form class="inp_form"><input type="text" class="input"  ng-model="name" ng-pattern="nameRegex">
+        <input type="text" class="input"  ng-model="email"  ng-pattern="mailRegex" >
+        <input type="text" class="input input_1"  ng-model="massage" ng-pattern="massageRegex">
+        <div class="home_btn flex btn_send" >Send Message</div>
+    </form>
+</div>
+<div class="footer">
+
+    <p class="p_txt white txt_footer"> © Copyright by Makov Yuriy<div class="home_btn flex btn_send footer_btn" scroll-to="home">To the Top</div></p>
+
+
+</div>
+
+
 
 
 </body>
