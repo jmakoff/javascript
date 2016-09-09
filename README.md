@@ -1,2 +1,2 @@
 # javascript
- class~ and homework
+My class~ and homework
