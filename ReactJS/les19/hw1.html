@@ -47,7 +47,7 @@ var users = [{name:"Anne Montgomery",gender:"Female"},
                         <th>Gender</th>
                     </tr>
                     {this.props.users.map(function (result) {
-                        return <Items name={result.name} gender={result.gender}></Items>
+                        return <Items name={result.name}  gender={result.gender}></Items>
 
                     })}
 
@@ -70,7 +70,7 @@ var users = [{name:"Anne Montgomery",gender:"Female"},
     })
 
     var container= document.getElementById('output')
-    ReactDOM.render(<Table><Items/></Table>,container)
+    ReactDOM.render(<Table index = "1"><Items/></Table>,container)
 
 
 

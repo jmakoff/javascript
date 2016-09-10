@@ -20,16 +20,17 @@
             return{
                 number1: 201,
                 number2: 232,
-                mode:true
+                mode:false
             }
 
         },
         render: function () {
+            var concat = this.props.number1+ ""+ this.props.number2;
             var summ =  this.props.number1+ this.props.number2;
-            if (this.props.mode === true){
+            if (this.props.mode){
                 return(<h1>Summ is {summ}</h1>)
             }else {
-            return(<h1>Concat of our elements is {this.props.number1} {this.props.number2} </h1>)
+            return(<h1>Concat of our elements is {concat} </h1>)
             }
         }
 
