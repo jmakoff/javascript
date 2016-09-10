@@ -13,9 +13,51 @@
     <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
 </head>
 <body>
+<style>
+    .red {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+    }
+
+    .blue {
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+    }
+</style>
 <div id="output"></div>
 <script type="text/babel">
+    var MyEl = React.createClass({
+        getInitialState: function () {
+            return {
+                check: false
+            }
+        },
+        change: function () {
 
+            this.setState({check: !this.state.check})
+
+        },
+        render: function () {
+            var Class ;
+            if (this.state.check) {
+                Class = "red";
+            }
+            else {
+                Class = "blue";
+            }
+            return (
+                    <div>
+                        <input type="checkbox" defaultChecked={this.state.check} onChange={this.change}/>
+                        <div className={Class}></div>
+                    </div>
+            )
+
+        }
+    })
+    var container = document.getElementById("output");
+    ReactDOM.render(<MyEl/>, container)
 
 </script>
 
