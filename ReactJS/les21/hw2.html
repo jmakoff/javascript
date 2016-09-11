@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><!--###Задача 2
+Создайте страницу-калькулятор. На странице должно быть 4 кнопки(по кнопке на математическую операцию:
+сложение, вычитание, умножение, деление), 2 поля ввода и элемент для отображения результата.
+Сделайте так, чтобы в поля ввода разрешалось вводить только цифры.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My calculator</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body>
+<div id="output"></div>
+<script type="text/babel">
+    var MyCalc = React.createClass({
+        getInitialState: function () {
+            return{
+                val1:0 ,
+                val2: 0,
+                output:""
+            }
+        },
+        getValue1: function (e) {
+          this.setState({val1: e.target.value})
+        },
+        getValue2: function (e) {
+            this.setState({val2: e.target.value})
+        },
+        plus: function () {
+            var summ = +this.state.val1 + +this.state.val2;
+          this.setState({output: summ})
+        },
+        minus: function () {
+            this.setState({output: +this.state.val1 - +this.state.val2})
+        },
+        mul: function () {
+            this.setState({output: +this.state.val1 * +this.state.val2})
+        },
+        div: function () {
+            this.setState({output: +this.state.val1 / +this.state.val2})
+        },
+
+        render: function () {
+            return(
+                    <div>
+                        <input type="number" placeholder="First number" onChange = {this.getValue1} /><br/>
+                        <input type="number" placeholder="Second number" onChange = {this.getValue2}/> <h1>Output:{this.state.output}</h1><br/>
+
+                        <button onClick={this.plus}>+(PLUS)</button>
+                        <button onClick={this.minus}>-(MINUS)</button>
+                        <button onClick={this.mul}>*(multiple)</button>
+                        <button onClick={this.div}>/(divide)</button>
+
+                    </div>
+            )
+        }
+    })
+    ReactDOM.render(<MyCalc/>, document.getElementById('output'));
+</script>
+</body>
+</html>
