@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><!--### Задача 3
+Создайте React-компонент, содержащий форму со следующими полями:
+* Name
+* Email
+* Phone number
+* Message
+Используя обработчики событий,  реализуйте валидацию формы
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+
+</head>
+<body>
+<style>
+    .invalid{
+        background-color: lightcoral;
+    }
+    .valid{
+        background-color: lightgreen;
+    }
+</style>
+<div id="output"></div>
+<script type="text/babel">
+    var MyComp = React.createClass({
+        getInitialState: function () {
+            return{
+                name:'',
+                Email: '',
+                Phone: "",
+                Mess: ''
+            }
+        },
+        nameinsp: function (e) {
+        var regex=/^[A-Za-z]+$/       ;
+
+        if (!regex.test(e.target.value) ){
+            this.setState({name: "invalid"})
+        }
+        if(regex.test(e.target.value)){
+            this.setState({name: 'valid'})
+        }
+        if (e.target.value === ""){
+            this.setState({name: ''})
+        }
+        },
+        emailinsp: function (e) {
+            var regex= /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+                    ;
+
+            if (!regex.test(e.target.value) ){
+                this.setState({Email: "invalid"})
+            }
+            if(regex.test(e.target.value)){
+                this.setState({Email: 'valid'})
+            }
+            if (e.target.value === ""){
+                this.setState({Email: ''})
+            }
+        },
+        phoneinsp: function (e) {
+            var regex= /^[0-9]+$/;
+
+            if (!regex.test(e.target.value) ){
+                this.setState({Phone: "invalid"})
+            }
+            if(regex.test(e.target.value)){
+                this.setState({Phone: 'valid'})
+            }
+            if (e.target.value === ""){
+                this.setState({Phone: ''})
+            }
+
+
+
+        },
+        messinsp: function (e) {
+            var regex=  /^.{15,}$/;;
+
+            if (!regex.test(e.target.value) ){
+                this.setState({Mess: "invalid"})
+            }
+            if(regex.test(e.target.value)){
+                this.setState({Mess: 'valid'})
+            }
+            if (e.target.value === ""){
+                this.setState({Mess: ''})
+            }
+        },
+
+        render: function(){
+            return(
+                <div>
+                    <input type="text" onChange={this.nameinsp} className={this.state.name} placeholder="Name"/>
+                    <input type="text" onChange={this.emailinsp} className={this.state.Email} placeholder="Email"/>
+                    <input type="text" onChange={this.phoneinsp} className={this.state.Phone} placeholder="Phone number"/>
+                    <input type="text" onChange={this.messinsp} className={this.state.Mess} placeholder="Message"/>
+
+                </div>
+        )}
+    });
+    ReactDOM.render(<MyComp/>, document.getElementById('output'))
+</script>
+
+</body>
+</html>
