@@ -1,7 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c2742df-b391-4ae5-9756-b1cb63665870" name="Default" comment="" />
+    <list default="true" id="3c2742df-b391-4ae5-9756-b1cb63665870" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/regexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/parse-float.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/parse-int.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/typed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/asap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/math.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/observable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/reflect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/symbol.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/system.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/is-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/copy-within.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/entries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/every.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/fill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/find-index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/find.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/for-each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/includes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/index-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/join.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/last-index-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/reduce-right.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/reduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/slice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/some.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/sort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/virtual/values.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/asap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/date/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/date/now.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/date/to-iso-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/date/to-json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/date/to-primitive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/date/to-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/dom-collections/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/dom-collections/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/error/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/error/is-error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/bind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/virtual/bind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/virtual/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/virtual/part.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/json/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/iaddh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/imulh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/isubh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/umulh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/constructor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/to-fixed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/to-precision.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/virtual/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/virtual/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/virtual/to-fixed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/virtual/to-precision.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define-getter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define-setter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/lookup-getter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/lookup-setter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/observable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/parse-float.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/parse-int.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/define-metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/delete-metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-metadata-keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-own-metadata-keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-own-metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/has-metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/has-own-metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/constructor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/flags.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/match.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/replace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/split.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/to-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/big.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/blink.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/bold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/fixed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/fontcolor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/fontsize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/italics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/link.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/match-all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/pad-end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/pad-start.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/small.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/strike.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/sub.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/sup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim-end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim-start.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/big.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/blink.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/bold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/code-point-at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/ends-with.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/escape-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/fixed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/fontcolor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/fontsize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/includes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/italics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/link.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/virtual/match-all.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/les20/hw3.html" afterPath="$PROJECT_DIR$/ReactJS/les20/hw3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/babylon/README.md" afterPath="$PROJECT_DIR$/ReactJS/node_modules/babylon/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/tokenizer/types.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/tokenizer/types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/util/identifier.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/util/identifier.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/util/location.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/util/location.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/util/whitespace.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/babylon/lib/util/whitespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/babylon/package.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/babylon/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/balanced-match/package.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/balanced-match/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/big.js/LICENCE" afterPath="$PROJECT_DIR$/ReactJS/node_modules/big.js/LICENCE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/big.js/README.md" afterPath="$PROJECT_DIR$/ReactJS/node_modules/big.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/big.js/big.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/big.js/big.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/big.js/big.min.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/big.js/big.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/big.js/package.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/big.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/brace-expansion/package.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/brace-expansion/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/chalk/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/concat-map/package.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/concat-map/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/convert-source-map/package.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/convert-source-map/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/CHANGELOG.md" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/bower.json" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/Gruntfile.ls" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/Gruntfile.ls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/build.ls" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/build.ls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/config.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/build/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/core.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/core.min.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/core.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/core.min.js.map" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/core.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/library.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/library.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/library.min.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/library.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/library.min.js.map" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/library.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/shim.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/shim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/shim.min.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/shim.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/shim.min.js.map" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/client/shim.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/_.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/_.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/delay.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/delay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/dict.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/dict.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/function.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/number.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/number.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/object.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/string.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/core/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es5/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es5/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/array.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/function.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/map.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/math.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/math.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/number.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/number.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/object.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/promise.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/reflect.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/reflect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/regexp.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/regexp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/set.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/string.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/symbol.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/symbol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/weak-map.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/weak-map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/weak-set.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es6/weak-set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/array.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/map.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/object.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/set.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/string.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/es7/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/concat.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/concat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/copy-within.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/copy-within.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/entries.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/entries.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/every.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/every.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/fill.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/fill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/filter.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/find-index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/find-index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/find.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/find.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/for-each.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/for-each.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/from.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/from.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/includes.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/includes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/index-of.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/index-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/iterator.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/iterator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/join.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/join.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/keys.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/last-index-of.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/last-index-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/map.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/of.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/pop.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/pop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/push.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/push.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/reduce-right.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/reduce-right.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/reduce.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/reduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/reverse.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/reverse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/shift.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/shift.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/slice.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/some.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/some.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/sort.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/sort.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/splice.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/splice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/unshift.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/unshift.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/values.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/array/values.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/clear-immediate.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/clear-immediate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/delay.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/delay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/dict.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/dict.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/has-instance.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/has-instance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/part.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/function/part.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/json/stringify.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/json/stringify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/map.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/acosh.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/acosh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/asinh.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/asinh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/atanh.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/atanh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/cbrt.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/cbrt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/clz32.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/clz32.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/cosh.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/cosh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/expm1.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/expm1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/fround.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/fround.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/hypot.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/hypot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/imul.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/imul.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/log10.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/log10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/log1p.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/log1p.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/log2.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/log2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/sign.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/sign.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/sinh.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/sinh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/tanh.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/tanh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/trunc.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/math/trunc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-finite.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-finite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-integer.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-integer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-nan.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-nan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-safe-integer.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/is-safe-integer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/iterator.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/number/iterator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/assign.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/assign.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/classof.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/classof.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/create.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define-properties.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define-properties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define-property.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/define.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/entries.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/entries.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/freeze.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/freeze.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-descriptor.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-descriptor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-descriptors.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-descriptors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-names.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-names.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-symbols.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-own-property-symbols.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-prototype-of.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/get-prototype-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-extensible.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-extensible.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-frozen.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-frozen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-object.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-sealed.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is-sealed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/keys.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/make.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/make.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/prevent-extensions.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/prevent-extensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/seal.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/seal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/set-prototype-of.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/set-prototype-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/values.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/object/values.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/promise.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/apply.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/apply.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/construct.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/construct.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/define-property.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/define-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/delete-property.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/delete-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/enumerate.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/enumerate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-own-property-descriptor.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-own-property-descriptor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-prototype-of.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get-prototype-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/get.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/has.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/has.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/is-extensible.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/is-extensible.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/own-keys.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/own-keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/prevent-extensions.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/prevent-extensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/set-prototype-of.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/set-prototype-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/set.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/reflect/set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/escape.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/escape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/regexp/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set-immediate.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set-immediate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set-interval.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set-interval.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set-timeout.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set-timeout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/at.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/code-point-at.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/code-point-at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/ends-with.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/ends-with.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/escape-html.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/escape-html.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/from-code-point.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/from-code-point.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/includes.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/includes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/index.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/iterator.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/iterator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/raw.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/raw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/repeat.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/repeat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/starts-with.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/starts-with.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim-left.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim-left.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim-right.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim-right.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/trim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/unescape-html.js" afterPath="$PROJECT_DIR$/ReactJS/node_modules/core-js/fn/string/unescape-html.js" />
+    </list>
     <ignored path="javascript.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,15 +337,18 @@
       <file leaf-file-name="cw1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="165">
               <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="0">
@@ -44,8 +358,21 @@
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classwork_22.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
           </provider>
         </entry>
       </file>
@@ -54,27 +381,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Angular/project/myScript.js" />
-        <option value="$PROJECT_DIR$/Angular/project/index.html" />
-        <option value="$PROJECT_DIR$/Angular/project/style.css" />
-        <option value="$PROJECT_DIR$/README.md" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/ReactJS/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="x" value="-1" />
+    <option name="width" value="1368" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -101,10 +420,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Changed Files" />
-        <subPane subId="Project Files" />
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -120,10 +436,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -183,9 +497,6 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3c2742df-b391-4ae5-9756-b1cb63665870" name="Default" comment="" />
@@ -204,7 +515,9 @@
       <workItem from="1472830067557" duration="30000" />
       <workItem from="1473278957402" duration="38000" />
       <workItem from="1473405461973" duration="299000" />
-      <workItem from="1473633024642" duration="22000" />
+      <workItem from="1473718997123" duration="1864000" />
+      <workItem from="1473750241356" duration="190000" />
+      <workItem from="1473766368354" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1473405701122</created>
@@ -213,22 +526,29 @@
       <option name="project" value="LOCAL" />
       <updated>1473405701122</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lesson21 ready">
+      <created>1473719069347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1473719069347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51017000" />
+    <option name="totallyTimeSpent" value="53076000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20416667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20774385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -254,7 +574,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="lesson21 ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson21 ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -263,13 +584,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="165">
           <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -279,8 +603,93 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactJS/les20/hw3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="306">
+            <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactJS/les20/hw3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
@@ -516,13 +925,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="165">
           <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -532,14 +950,27 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactJS/les20/hw3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
   </component>

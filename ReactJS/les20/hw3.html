@@ -39,6 +39,7 @@
                         <input type="number" name="count" onChange={this.change}/>
                         <input type="checkbox" value="type" onChange={this.typeChange}/>
                         <Child val={this.state.count} type={this.state.type}></Child>
+
                     </div>
             )
         }
@@ -57,7 +58,7 @@
             var length = this.props.val;
             var list = [];
             if (length > 8) {
-                alert("We have only 8-items list, please correct input! ")
+
                 length = 8;
             }
             for (var i = 0; i < length; i++) {
