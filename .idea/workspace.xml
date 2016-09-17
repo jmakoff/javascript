@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3c2742df-b391-4ae5-9756-b1cb63665870" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/ReactJS/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/les22/hw3/build/bundle.js" afterPath="$PROJECT_DIR$/ReactJS/les22/hw3/build/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReactJS/les22/hw3/jsx/main.jsx" afterPath="$PROJECT_DIR$/ReactJS/les22/hw3/jsx/main.jsx" />
     </list>
     <ignored path="javascript.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,9 +40,6 @@
       </file>
       <file leaf-file-name="classwork_22.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="210">
@@ -48,6 +48,9 @@
               </first_editor>
               <second_editor />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -96,6 +99,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -106,7 +110,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,7 +199,8 @@
       <workItem from="1474009661167" duration="18000" />
       <workItem from="1474112531260" duration="60000" />
       <workItem from="1474112617904" duration="761000" />
-      <workItem from="1474126852821" duration="191000" />
+      <workItem from="1474126852821" duration="296000" />
+      <workItem from="1474136314547" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1473405701122</created>
@@ -226,11 +230,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474112735617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="less 24 cw">
+      <created>1474127157212</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1474127157212</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54643000" />
+    <option name="totallyTimeSpent" value="54754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
@@ -270,7 +281,8 @@
     <MESSAGE value="lesson21 ready" />
     <MESSAGE value="update" />
     <MESSAGE value="less 22 ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="less 22 ready" />
+    <MESSAGE value="less 24 cw" />
+    <option name="LAST_COMMIT_MESSAGE" value="less 24 cw" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -286,9 +298,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -297,6 +306,9 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
@@ -308,9 +320,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -319,11 +328,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="255">
@@ -333,6 +342,9 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les20/hw3.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -350,9 +362,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -361,11 +370,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="306">
@@ -375,6 +384,9 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les20/hw3.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -392,9 +404,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -402,6 +411,9 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">
@@ -643,14 +655,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -658,6 +662,14 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les22/cw1/build/bundle.js">
@@ -668,9 +680,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Ignite/003_React/lesson_22/Classwork/classwork_22.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="210">
@@ -679,6 +688,9 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactJS/les19/cw1.html">

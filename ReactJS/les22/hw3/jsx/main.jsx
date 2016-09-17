@@ -57,7 +57,7 @@ class App extends React.Component {
         });
 
         return (
-            <table className="table">
+            <table >
                 <thead>
                 <tr>
                     <th>First name </th>
