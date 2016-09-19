@@ -36,7 +36,7 @@ class App extends React.Component {
             transitionName:"example",
             transitionEnterTimeout: 500,
             transitionLeaveTimeout: 300,
-            component: 'div',
+            component: 'h3',
             transitionAppear: true,
             transitionAppearTimeout: 300
         }
@@ -60,8 +60,15 @@ class App extends React.Component {
         )
     }
 }
+class Home extends React.Component {
+    render() {
+        return (
+            <h3>This is the homepage</h3>
+        )}
+}
 ReactDOM.render(<Router history={hashHistory}>
     <Route path='/' component={App}>
+        <IndexRoute component={Home}/>
         <Route path="listView" component={listView}/>
         <Route path="tableView" component={tableView}/>
     </Route>

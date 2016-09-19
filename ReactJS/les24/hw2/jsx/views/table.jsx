@@ -15,7 +15,10 @@ export default class tableView extends React.Component {
             table.push(<tr key={i} id={i}><td>{result.first_name}</td><td>{result.last_name}</td><td>{result.gender}</td></tr>);
         })
         return(
+            <div>
+                <h3>This is table view!!!</h3>
                 <table>
+
                     <thead>
                     <tr>
                         <th>First Name</th>
@@ -27,5 +30,6 @@ export default class tableView extends React.Component {
                     {table}
                     </tbody>
                 </table>
+                </div>
       )}
 } 
