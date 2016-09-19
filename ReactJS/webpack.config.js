@@ -14,7 +14,6 @@ module.exports = {
         "les24/cw3/build/bundle": "./les24/cw3/jsx/index.jsx",
         "les24/hw1/build/bundle": "./les24/hw1/jsx/App.jsx",
         "les24/hw2/build/bundle": "./les24/hw2/jsx/App.jsx",
-        "les25/cw1/build/bundle": "./les25/cw1/src/main.jsx",
         "les24/hw3/build/bundle": "./les24/hw3/jsx/App.jsx",
 
 

@@ -1,0 +1,11 @@
+@import 'bootstrap.css';
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+}
+.block2{
+    width: 100px;
+    height: 100px;
+    background-color: darkviolet;
+}

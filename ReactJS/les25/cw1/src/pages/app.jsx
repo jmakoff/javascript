@@ -1,41 +1,40 @@
-﻿var React = require('react'); 
+﻿var React = require('react');
 
-var appStore = require('../stores/appStore');
-var appActions = require('../actions/appActions');
+var appStore = require('../Stores/appStore.js');
+var appActions = require('../actions/appActions.js');
 
-// flux Controller Views / Представления — React-компоненты,
-// которые собирают состояние хранилищ и передают его дочерним компонентам через свойства
+// flux Controller Views / Представления — React-компоненты, которые собирают состояние хранилищ и передают его дочерним компонентам через свойства
 
 class App extends React.Component{
     constructor() {
-        super() 
-        
-        this.state = {
-            counter: appStore.getInitialCount()
-        }
-        this.clickHandler = this.clickHandler.bind(this) 
-    } 
+        super()
 
-    componentWillMount() { 
+        this.state = {
+            styleClass: appStore.getStyleClass()
+        }
+
+        this.classHandler = this.classHandler.bind(this)
+    }
+
+    componentWillMount() {
         // создание обработчика flux actions / Действий
-        appStore.on('countChange', () => {
-            this.setState({ counter: appStore.countClicks() })
+        appStore.on('classChange', () => {
+                this.setState({ styleClass: appStore.addClass() })
             }
         )
     }
 
-    clickHandler() { 
-     
-        appActions.count(); 
+    classHandler() {
+        appActions.changeClass();
     }
 
     render() {
         return (
             <div className="panel well">
-                <button className="btn-lg btn-warning btn" onClick={this.clickHandler}>Click me!</button>
-                <h1>{this.state.counter}</h1>
+                <div className={this.state.styleClass}>My Element</div>
+                <button className="btn-lg btn-success btn" onClick={this.classHandler}>Click me!</button>
             </div>
-    )}
+        )}
 }
 
 module.exports = App; 
