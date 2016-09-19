@@ -4,6 +4,7 @@
 module.exports = {
     entry: {
         "les22/cw1/build/bundle": "./les22/cw1/jsx/main.jsx",
+        "les22/cw2/build/bundle": "./les22/cw2/jsx/main.js",
         "les22/cw3/build/bundle": "./les22/cw3/jsx/main.jsx",
         "les22/hw1/build/bundle": "./les22/hw1/jsx/main.jsx",
         "les22/hw2/build/bundle": "./les22/hw2/jsx/main.jsx",

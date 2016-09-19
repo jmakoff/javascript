@@ -6,7 +6,7 @@ window.onload = function() {
 
             var xhr = new XMLHttpRequest();
 
-            xhr.open('GET','image.jpg', true);
+            xhr.open('GET','./image.jpg', true);
             xhr.responseType = 'blob';
 
             setTimeout(function() {
