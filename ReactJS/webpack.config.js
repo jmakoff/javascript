@@ -15,6 +15,9 @@ module.exports = {
         "les24/hw1/build/bundle": "./les24/hw1/jsx/App.jsx",
         "les24/hw2/build/bundle": "./les24/hw2/jsx/App.jsx",
         "les24/hw3/build/bundle": "./les24/hw3/jsx/App.jsx",
+        'les25/hw1/build/bundle':'./les25/hw1/src/main.js',
+        'les25/hw2/build/bundle':'./les25/hw2/src/main.js'
+
 
 
 
