@@ -111,6 +111,11 @@
 	 ```*/
 	var ReactCSSTransitionGroup = __webpack_require__(335);
 
+	var router = __webpack_require__(262);
+	var Link = router.Link;
+
+	var users = [{ first_name: "Matthew", last_name: "Phillips", email: "mphillips0@myspace.com", gender: "Male", ip_address: "14.241.172.154", id: 23468 }, { first_name: "Larry", last_name: "Weaver", email: "lweaver1@slideshare.net", gender: "Male", ip_address: "126.139.9.128", id: 89078 }, { first_name: "Barbara", last_name: "Tucker", email: "btucker2@cbc.ca", gender: "Female", ip_address: "92.195.229.16", id: 56435 }, { first_name: "Jonathan", last_name: "Cook", email: "jcook3@fc2.com", gender: "Male", ip_address: "187.79.225.71", id: 78908 }, { first_name: "Jean", last_name: "Flores", email: "jflores4@last.fm", gender: "Female", ip_address: "222.197.158.249", id: 67653 }, { first_name: "Kimberly", last_name: "Nelson", email: "knelson5@nifty.com", gender: "Female", ip_address: "111.174.89.57", id: 83425 }, { first_name: "Willie", last_name: "Banks", email: "wbanks6@abc.net.au", gender: "Male", ip_address: "97.0.19.154", id: 99873 }, { first_name: "Michael", last_name: "King", email: "mking7@w3.org", gender: "Male", ip_address: "149.114.62.6", id: 34239 }];
+
 	var App = function (_React$Component) {
 	    (0, _inherits3.default)(App, _React$Component);
 
@@ -141,7 +146,7 @@
 	                        'li',
 	                        null,
 	                        _react2.default.createElement(
-	                            _reactRouter.Link,
+	                            Link,
 	                            { to: '/listView' },
 	                            _react2.default.createElement(
 	                                'button',
@@ -154,7 +159,7 @@
 	                        'li',
 	                        null,
 	                        _react2.default.createElement(
-	                            _reactRouter.Link,
+	                            Link,
 	                            { to: '/tableView' },
 	                            _react2.default.createElement(
 	                                'button',
@@ -208,12 +213,12 @@
 	    { history: _reactRouter.hashHistory },
 	    _react2.default.createElement(
 	        _reactRouter.Route,
-	        { path: '/', component: App },
-	        _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
-	        _react2.default.createElement(_reactRouter.Route, { path: 'listView', component: _list2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: 'tableView', component: _table2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: 'listView/:id', component: _new2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: 'tableView/:id', component: _new2.default })
+	        { path: '/', component: App, users: users },
+	        _react2.default.createElement(_reactRouter.IndexRoute, { component: Home, users: users }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'listView', component: _list2.default, users: users }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'tableView', component: _table2.default, users: users }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'listView/:id', component: _new2.default, users: users }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'tableView/:id', component: _new2.default, users: users })
 	    )
 	), document.getElementById('output'));
 
@@ -29624,11 +29629,7 @@
 /* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
+	'use strict';
 
 	var _getPrototypeOf = __webpack_require__(172);
 
@@ -29650,60 +29651,71 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var listView = function (_React$Component) {
-	    (0, _inherits3.default)(listView, _React$Component);
+	var React = __webpack_require__(1);
+	var router = __webpack_require__(262);
 
-	    function listView() {
-	        (0, _classCallCheck3.default)(this, listView);
-	        return (0, _possibleConstructorReturn3.default)(this, (listView.__proto__ || (0, _getPrototypeOf2.default)(listView)).apply(this, arguments));
+	var Link = router.Link;
+
+	var ListView = function (_React$Component) {
+	    (0, _inherits3.default)(ListView, _React$Component);
+
+	    function ListView(props) {
+	        (0, _classCallCheck3.default)(this, ListView);
+	        return (0, _possibleConstructorReturn3.default)(this, (ListView.__proto__ || (0, _getPrototypeOf2.default)(ListView)).call(this, props));
 	    }
 
-	    (0, _createClass3.default)(listView, [{
-	        key: "render",
+	    (0, _createClass3.default)(ListView, [{
+	        key: 'render',
 	        value: function render() {
-	            var users = [{ first_name: "Matthew", last_name: "Phillips", email: "mphillips0@myspace.com", gender: "Male", ip_address: "14.241.172.154", id: 23468 }, { first_name: "Larry", last_name: "Weaver", email: "lweaver1@slideshare.net", gender: "Male", ip_address: "126.139.9.128", id: 89078 }, { first_name: "Barbara", last_name: "Tucker", email: "btucker2@cbc.ca", gender: "Female", ip_address: "92.195.229.16", id: 56435 }, { first_name: "Jonathan", last_name: "Cook", email: "jcook3@fc2.com", gender: "Male", ip_address: "187.79.225.71", id: 78908 }, { first_name: "Jean", last_name: "Flores", email: "jflores4@last.fm", gender: "Female", ip_address: "222.197.158.249, id:67653" }, { first_name: "Kimberly", last_name: "Nelson", email: "knelson5@nifty.com", gender: "Female", ip_address: "111.174.89.57", id: 83425 }, { first_name: "Willie", last_name: "Banks", email: "wbanks6@abc.net.au", gender: "Male", ip_address: "97.0.19.154", id: 99873 }, { first_name: "Michael", last_name: "King", email: "mking7@w3.org", gender: "Male", ip_address: "149.114.62.6", id: 34239 }];
-	            var list = [];
-	            users.map(function (result, i) {
-	                list.push(_react2.default.createElement(
-	                    "li",
-	                    { key: i, id: i },
-	                    result.first_name,
-	                    "  ",
-	                    result.last_name
-	                ));
-	            });
-	            return _react2.default.createElement(
-	                "div",
+	            return React.createElement(
+	                'div',
 	                null,
-	                _react2.default.createElement(
-	                    "h3",
+	                React.createElement(
+	                    'h3',
 	                    null,
-	                    "This is list view!"
+	                    'ListView'
 	                ),
-	                _react2.default.createElement(
-	                    "ul",
+	                React.createElement(
+	                    'ul',
 	                    null,
-	                    list
+	                    this.props.route.users.map(function (user, item) {
+	                        return React.createElement(
+	                            'li',
+	                            { key: item },
+	                            React.createElement(
+	                                Link,
+	                                { to: { pathname: 'listView/' + user.id, query: { first_name: user.first_name, last_name: user.last_name, email: user.email, gender: user.gender, ip_address: user.ip_address } } },
+	                                React.createElement(
+	                                    'span',
+	                                    null,
+	                                    user.first_name
+	                                ),
+	                                ' ',
+	                                React.createElement(
+	                                    'span',
+	                                    null,
+	                                    user.last_name,
+	                                    ';'
+	                                )
+	                            )
+	                        );
+	                    })
 	                )
 	            );
 	        }
 	    }]);
-	    return listView;
-	}(_react2.default.Component);
+	    return ListView;
+	}(React.Component);
 
-	exports.default = listView;
+	module.exports = ListView;
 
 /***/ },
 /* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -29734,6 +29746,11 @@
 	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var router = __webpack_require__(262);
+
+	var Link = router.Link;
+	var browserHistory = router.browserHistory;
 
 	var tableView = function (_React$Component) {
 	    (0, _inherits3.default)(tableView, _React$Component);
@@ -29744,69 +29761,66 @@
 	    }
 
 	    (0, _createClass3.default)(tableView, [{
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
-	            var users = [{ first_name: "Matthew", last_name: "Phillips", email: "mphillips0@myspace.com", gender: "Male", ip_address: "14.241.172.154", id: 23468 }, { first_name: "Larry", last_name: "Weaver", email: "lweaver1@slideshare.net", gender: "Male", ip_address: "126.139.9.128", id: 89078 }, { first_name: "Barbara", last_name: "Tucker", email: "btucker2@cbc.ca", gender: "Female", ip_address: "92.195.229.16", id: 56435 }, { first_name: "Jonathan", last_name: "Cook", email: "jcook3@fc2.com", gender: "Male", ip_address: "187.79.225.71", id: 78908 }, { first_name: "Jean", last_name: "Flores", email: "jflores4@last.fm", gender: "Female", ip_address: "222.197.158.249, id:67653" }, { first_name: "Kimberly", last_name: "Nelson", email: "knelson5@nifty.com", gender: "Female", ip_address: "111.174.89.57", id: 83425 }, { first_name: "Willie", last_name: "Banks", email: "wbanks6@abc.net.au", gender: "Male", ip_address: "97.0.19.154", id: 99873 }, { first_name: "Michael", last_name: "King", email: "mking7@w3.org", gender: "Male", ip_address: "149.114.62.6", id: 34239 }];
-	            var table = [];
-	            users.map(function (result, i) {
-	                table.push(_react2.default.createElement(
-	                    "tr",
-	                    { key: i, id: i },
-	                    _react2.default.createElement(
-	                        "td",
-	                        null,
-	                        result.first_name
-	                    ),
-	                    _react2.default.createElement(
-	                        "td",
-	                        null,
-	                        result.last_name
-	                    ),
-	                    _react2.default.createElement(
-	                        "td",
-	                        null,
-	                        result.gender
-	                    )
-	                ));
-	            });
+
 	            return _react2.default.createElement(
-	                "div",
+	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    "h3",
+	                    'h3',
 	                    null,
-	                    "This is table view!!!"
+	                    'This is table view!!!'
 	                ),
 	                _react2.default.createElement(
-	                    "table",
+	                    'table',
 	                    null,
 	                    _react2.default.createElement(
-	                        "thead",
+	                        'thead',
 	                        null,
 	                        _react2.default.createElement(
-	                            "tr",
+	                            'tr',
 	                            null,
 	                            _react2.default.createElement(
-	                                "th",
+	                                'th',
 	                                null,
-	                                "First Name"
+	                                'First Name'
 	                            ),
 	                            _react2.default.createElement(
-	                                "th",
+	                                'th',
 	                                null,
-	                                "Last Name"
+	                                'Last Name'
 	                            ),
 	                            _react2.default.createElement(
-	                                "th",
+	                                'th',
 	                                null,
-	                                " Gender"
+	                                ' Gender'
 	                            )
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        "tbody",
+	                        'tbody',
 	                        null,
-	                        table
+	                        this.props.route.users.map(function (user, item) {
+	                            return _react2.default.createElement(
+	                                'tr',
+	                                { key: item },
+	                                _react2.default.createElement(
+	                                    'td',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        Link,
+	                                        { to: { pathname: 'listView/' + user.id, query: { first_name: user.first_name, last_name: user.last_name, email: user.email, gender: user.gender, ip_address: user.ip_address } } },
+	                                        user.first_name
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'td',
+	                                    null,
+	                                    user.last_name
+	                                )
+	                            );
+	                        })
 	                    )
 	                )
 	            );
