@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/ReactJS/les23/hw1" libraries="{javascript/ReactJS/les23/hw1/node_modules}" />
     <file url="file://$PROJECT_DIR$/ReactJS/les23/hw2" libraries="{javascript/ReactJS/les23/hw2/node_modules}" />
     <file url="file://$PROJECT_DIR$/ReactJS/les25/cw1" libraries="{javascript/ReactJS/les25/cw1/node_modules}" />
+    <file url="file://$PROJECT_DIR$/ReactJS/les25/cw2" libraries="{javascript/ReactJS/les25/cw2/node_modules}" />
+    <file url="file://$PROJECT_DIR$/ReactJS/les25/cw3" libraries="{javascript/ReactJS/les25/cw3/node_modules}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>
