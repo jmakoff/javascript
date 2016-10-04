@@ -21,6 +21,10 @@
                 var xhr = new XMLHttpRequest()
                 function makeReq(id) {
                     xhr.open('GET', '/users/' + id)
+                    xhr.onload= function () {
+                        console.log(this.responseText);
+                        var out = document.getElementById('out').innerHTML = this.responseText;
+                    }
                     console.log(id)
                     xhr.send()
                 }
@@ -28,6 +32,8 @@
                 document.getElementById('out').appendChild(newEl)
                 newEl.onclick = function (e) {
                     makeReq(e.target.id);
+                    document.getElementById('out')
+
 
                 }
 
@@ -40,6 +46,8 @@
 <ul id="out">
 
 </ul>
+<p id="out1"></p>
+
 
 </body>
 </html>
