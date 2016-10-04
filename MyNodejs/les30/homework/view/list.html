@@ -17,6 +17,15 @@
             for (i = 0; i < users.length; i++) {
                 var newEl = document.createElement('li')
                 newEl.innerHTML =  "Name: "+ users[i].name+ ', Age: ' + users[i].age
+                var xhr = new XMLHttpRequest()
+                function makeReq() {
+                    xhr.open('GET', '/users/'+ i)
+                    xhr.send()
+                }
+                newEl.onclick = function () {
+                    makeReq();
+
+                }
 
                 document.getElementById('out').appendChild(newEl)
 
