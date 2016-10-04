@@ -22,9 +22,7 @@ app.get('/users', function (req, res) {
 
 })
 app.use(function(err, req, res, next) {
-
     res.status(500).send('Ooops...Something went wrong!');
-
     next(err.message);
 });
 
