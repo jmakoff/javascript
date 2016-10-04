@@ -23,7 +23,7 @@
                     xhr.open('GET', '/users/' + id)
                     xhr.onload= function () {
                         console.log(this.responseText);
-                        var out = document.getElementById('out').innerHTML = this.responseText;
+                        var out = document.getElementById('out1').innerHTML = this.responseText;
                     }
                     console.log(id)
                     xhr.send()
@@ -43,10 +43,8 @@
     </script>
 </head>
 <body>
-<ul id="out">
-
-</ul>
-<p id="out1"></p>
+<ul id="out"></ul>
+<h1 id="out1"></h1>
 
 
 </body>
