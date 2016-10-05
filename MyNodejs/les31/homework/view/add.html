@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            document.getElementById('submit').onclick = function () {
+                var xhr = new XMLHttpRequest()
+                xhr.open('POST', '/addNewItem')
+                var sended = {
+                    id : document.getElementById('ID').value,
+                    name: document.getElementById('Name').value,
+                    info: document.getElementById('info').value
+                }
+                xhr.onload = function () {
+                    document.getElementById('out').innerHTML = 'Item added!'
+                }
+                var data=JSON.stringify(sended)
+                xhr.setRequestHeader('Content-Type', 'application/json');
+
+                xhr.send(data);
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" placeholder="add ID" id="ID">
+<input type="text" placeholder="add Name" id="Name">
+<input type="text" placeholder="add info" id="info"><br/>
+<button type="submit" id="submit">Submit</button>
+<h2 id="out"></h2>
+
+</body>
+</html>
