@@ -1,13 +1,18 @@
 window.onload = function () {
     var homeBtn = document.getElementById('home');
     var contactBtn = document.getElementById('contactbtn')
+    var footerCont = document.getElementById('footer_contact')
+    footerCont.onclick = function () {
+        window.location.pathname = '/contact'
+        console.log('successfully redirected to contact');
+    }
     contactBtn.onclick = function () {
         window.location.pathname = '/contact'
-        console.log('successfully redirected to contact')
+        console.log('successfully redirected to contact');
     }
     homeBtn.onclick = function () {
         window.location.pathname = '/home'
-        console.log('successfully redirected to home')
+        console.log('successfully redirected to home');
     }
     /*Disable/enable button LogIn*/
     document.getElementById('login').onchange = function () {
@@ -24,7 +29,7 @@ window.onload = function () {
             }
         }
     }
-    document.getElementById('log').onclick = function () {
+    document.getElementById('log').onclick = function () {//send username and password
         var xhr = new XMLHttpRequest();
         xhr.open('POST', '/login');
         var send = {
