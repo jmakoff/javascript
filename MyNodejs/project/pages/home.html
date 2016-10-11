@@ -8,11 +8,31 @@
     <title>Document</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="javascript/main.js"></script>
+
 </head>
 <body>
 <div id="Header">
     <div id="top" class="center-block">
-        <div id="icon"> </div>
+        <div id="icon"><div class="center-block " id="ict" >D</div> </div><p class="disp">DISPLAY</p>
+        <hr id="line" />
+        <h5 id="home">HOME</h5>
+        <h5 id="contactbtn">CONTACT</h5>
+    </div>
+    <div id="contact">
+        <h2 id="check">CHECK OUT OUR WORK</h2>
+        <form class="form-inline myform">
+            <div class="form-group">
+                <input type="text" class="form-control" id="login" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+
+            <input type="button" class="btn btn-default" id="log" value="LOG IN" disabled>
+        </form>
+
+
     </div>
 </div>
 </body>
