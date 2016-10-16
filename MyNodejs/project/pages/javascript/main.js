@@ -33,14 +33,14 @@ window.onload = function () {
         var xhr = new XMLHttpRequest();
         xhr.open('POST', '/login');
         var send = {
-            login:  document.getElementById('login').value,
-            password:  document.getElementById('password').value
+            login: document.getElementById('login').value,
+            password: document.getElementById('password').value
         }
         var data = JSON.stringify(send)
         xhr.setRequestHeader('Content-Type', 'application/json')
         xhr.send(data)        //send data
 
-        xhr.onload= function () {
+        xhr.onload = function () {
             alert(this.responseText);
         }
         document.getElementById('password').value = "";//cleanup after yourself
@@ -49,5 +49,58 @@ window.onload = function () {
 
 
     }
+
+    function fileterIMG(filter) {//вывод изображений из БД
+        if (!filter) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/img/all');
+            xhr.onload = function () {
+                document.getElementById('images').innerHTML = this.responseText;
+                console.log('images sended')
+            }
+            xhr.send();
+
+
+        }
+        else {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'img/' + filter)
+            xhr.onload = function () {
+                document.getElementById('images').innerHTML = this.responseText;
+                console.log('images sended')
+            }
+            xhr.send();
+
+        }
+
+    }
+
+    /*дальше блок обаботки фильтрации изображений*/
+    fileterIMG();
+    document.getElementById('web').onclick = function () {
+        fileterIMG('web')
+    };
+    document.getElementById('print').onclick = function () {
+        fileterIMG('print')
+    };
+    document.getElementById('app').onclick = function () {
+        fileterIMG('applications')
+    };
+    document.getElementById('photo').onclick = function () {
+        fileterIMG('photography')
+    };
+    document.getElementById('all').onclick = function () {
+        fileterIMG('all')
+    };
+    //end of filter block
+
+
+   /*adding project handler*/
+   var add = document.getElementById('plus')
+    add.onclick = function () {
+        window.location.pathname = '/addProject' ;
+        console.log('Redirected to adding page')
+    }
+
 
 }

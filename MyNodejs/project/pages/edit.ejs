@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <script src="../javascript/edit.js"></script>
+
+</head>
+<body>
+<div id="Header">
+    <div id="top" class="center-block">
+        <div id="icon"><div class="center-block " id="ict" >D</div> </div><p class="disp">DISPLAY</p>
+        <hr id="line" />
+        <h5 id="home">HOME</h5>
+        <h5 id="contactbtn">CONTACT</h5>
+    </div>
+    <div id="contact">
+        <h2 id="check">CHECK OUT OUR WORK</h2>
+
+    </div>
+</div>
+<form role="form" class="form-horizontal">
+
+<%- data %>
+
+</form>
+<input type="button" value="Go back!" class="btn btn-warning" >
+
+<input type="button" value="Update!" class="btn btn-default center-block btn-lg" id="update">
+<div id="info"></div>
+<div id="Footer">
+    <div id="bl"> <h4 id="footer_text">ARE YOU IMPRESSED BY OUR CREATIVITY? </h4><input type="button" value="CONTACT US RIGHT NOW" id="footer_contact"> </div>
+
+</div>
+<div id="copyright"><div id="copyr">COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED</div> </div>
+
+</body>
+<script>
+    document.getElementById('contactbtn').onclick = function () {
+        window.location.pathname = '/contact'
+        console.log('successfully redirected to contact');
+    }
+    document.getElementById('footer_contact').onclick = function () {
+        window.location.pathname = '/contact'
+        console.log('successfully redirected to contact');
+    }
+    document.getElementById('home').onclick = function () {
+        window.location.pathname = '/home'
+        console.log('successfully redirected to home');
+    }
+    var btn =document.getElementsByClassName('btn')[0]
+    btn.onclick= function () {
+        window.location.pathname = '';
+    }
+</script>
+
+</html>

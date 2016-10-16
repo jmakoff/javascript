@@ -5,10 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>NodeJS project</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
     <script src="javascript/main.js"></script>
+
 
 </head>
 <body>
@@ -35,10 +38,36 @@
 
     </div>
 </div>
+<div id="portfolio">
+    <h3 id="green_txt">Portfolio</h3>
+    <hr/>
+    <div id="filter">
+        <label class="btns_choose" id="all">ALL / </label>&nbsp;
+        <label class="btns_choose" id="print">PRINT / </label>&nbsp;
+        <label class="btns_choose" id="photo">PHOTOGRAPHY / </label>&nbsp;
+        <label class="btns_choose" id="web">WEB / </label>&nbsp;
+        <label class="btns_choose" id="app">APPLICATIONS / </label>&nbsp;
+    </div>
+    <div id="images">
+
+    </div>
+    <div id="addImg"><br>Add Project!<br><div id="plus">+</div></div>
+
+
+</div>
 <div id="Footer">
     <div id="bl"> <h4 id="footer_text">ARE YOU IMPRESSED BY OUR CREATIVITY? </h4><input type="button" value="CONTACT US RIGHT NOW" id="footer_contact"> </div>
 
 </div>
 <div id="copyright"><div id="copyr">COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED</div> </div>
+<script>
+    var giveInfo = function (id) {//обработка клика на info(overlay on image)
+        window.location.pathname = 'info/'+ id;
+    }
+    var edit = function (id) {
+        window.location.pathname = 'edit/'+ id;
+    }
+
+</script>
 </body>
 </html>

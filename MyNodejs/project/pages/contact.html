@@ -5,9 +5,74 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+
+
 </head>
 <body>
+<div id="Header">
+    <div id="top" class="center-block">
+        <div id="icon">
+            <div class="center-block " id="ict">D</div>
+        </div>
+        <p class="disp">DISPLAY</p>
+        <hr id="line"/>
+        <h5 id="home">HOME</h5>
+        <h5 id="contactbtn">CONTACT</h5>
+    </div>
+    <div id="contact">
+        <h2 id="check">GOT A QUESTION OR INQUIRY?</h2>
+
+    </div>
+</div>
+<iframe class="center-block"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15228.684186651719!2d30.5211152240384!3d50.44143859454608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1476531175968"
+        width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div class="center-block">
+    <form class="input-group" id="center-form"><!--contact form-->
+
+
+        <input type="text" class="form-control  text-center" id="inputName" placeholder="Name" pattern="/^(?=.*?[A-Za-z])[A-Za-z+]+$/" >
+        <div id="nameTrouble"></div>
+        <input type="email" class="form-control text-center " id="inputEmail" placeholder="Email address">
+        <div id="emailTrouble"></div>
+        <input type="text" class="form-control  text-center" id="inputSubject" placeholder="Subject">
+        <div id="subjTrouble"></div>
+        <div id="messTrouble"></div>
+
+        <input type="text" class="form-control" id="inputbody" >
+
+
+
+        <button type="button" class="btn btn-lg btn-default  center-block" id="sendContact">Send</button>
+
+    </form>
+</div>
+
+
+<button class="btn btn-warning"> Go home!</button>
+
+<script>//script for header btns and home btn
+document.getElementById('contactbtn').onclick = function () {
+    window.location.pathname = '/contact'
+    console.log('successfully redirected to contact');
+}
+document.getElementById('home').onclick = function () {
+    window.location.pathname = '/home'
+    console.log('successfully redirected to home');
+}
+var btn = document.getElementsByClassName('btn')[1]
+btn.onclick = function () {
+    window.location.pathname = '';
+}
+</script>
+<script src="../javascript/contact.js"></script>
+
 
 </body>
 </html>
