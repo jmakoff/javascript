@@ -162,6 +162,29 @@ app.get('/addProject', function (req,res) {
     res.sendFile(path.join(__dirname, 'pages/add.html'))
 })
 
+/*adding element handling*/
+app.post('/add', function (req, res) {
+   /* var sql1 = `SELECT * FROM data.projects`
+    connection.query(sql1, function (err, rows) {
+        lengthDB = rows.length;
+        console.log('length = '+ lengthDB);
+    })*/
+    var sql = 'INSERT INTO `projects` ( id, title, author, description, category, date) VALUES ( ?, ?, ?, ?, ? , ?)'
+    var insert = [10/*lengthDB+1 (не получилось)*/ , req.body.title, req.body.author, req.body.description, req.body.category, '2016-08-02'/*тоже пришлось захаркодить*/]
+    console.log(insert);
+    sql = mysql.format(sql, insert)
+    connection.query(sql, function (err) {
+        if (err) console.log(err)
+        console.log('database +1 !!!')
+    })
+    res.send()
+})
+/*message handling (write comments in array)*/
+var comments = []//here will be your comments
+app.post('/sendComment', function (req, res) {
+     comments.push(req.body)
+    console.log(comments)
+})
 
 app.listen(port, function () {
     console.log('server listening on ' + port + ' port')

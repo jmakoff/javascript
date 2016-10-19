@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <script src="../javascript/add.js"></script>
 
 </head>
 <body>
@@ -46,10 +47,12 @@
     <input type="text" id="author" class="myinpform form-control" placeholder="Author">
     <input type="text" id="description" class="myinpform form-control" placeholder="Description">
     <input type="text" id="category" class="myinpform form-control" placeholder="Category">
-</div>
+    <input type="button" class="btn btn-default btn-lg center-block" id="send-addForm" value="Send!">
+    <div><h4 id="output"></h4></div>
+    </div>
 
 
-<input type="button" value="Go back!" class="btn btn-warning">
+<input type="button" id="goHome" value="Go back!" class="btn btn-warning">
 
 <div id="info"></div>
 <div id="Footer">
@@ -61,6 +64,24 @@
 <div id="copyright">
     <div id="copyr">COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED</div>
 </div>
-
+<!--Handling of standart buttons-->
+<script>
+    document.getElementById('contactbtn').onclick = function () {
+        window.location.pathname = '/contact'
+        console.log('successfully redirected to contact');
+    }
+    document.getElementById('footer_contact').onclick = function () {
+        window.location.pathname = '/contact'
+        console.log('successfully redirected to contact');
+    }
+    document.getElementById('home').onclick = function () {
+        window.location.pathname = '/home'
+        console.log('successfully redirected to home');
+    }
+    var btn =document.getElementById('goHome')
+    btn.onclick= function () {
+        window.location.pathname = '';
+    }
+</script>
 </body>
 </html>

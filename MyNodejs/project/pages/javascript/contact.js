@@ -84,6 +84,17 @@ window.onload = function () {
             alert('Please fill in all of the fields! Form wasn`t sended')
         }
         else {/*clean after yourself*/
+            /*lets send comment*/
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/sendComment')
+            var body = {
+                name: name.value,
+                email:  email.value,
+                subject: subject.value,
+                message: message.value
+            }
+            xhr.send(JSON.stringify(body));
+
             name.value ='';
             email.value ='';
             subject.value = '';
